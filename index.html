@@ -33,6 +33,38 @@
 </style> -->
 
 <style>
+/* 基础响应式样式 */
+@media screen and (max-width: 768px) {
+table, tbody, tr, td {
+  display: block;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* 改进的列表样式 */
+ul {
+  padding-left: 20px;
+  margin-right: 10px; /* 防止文字贴近右边缘 */
+}
+
+li {
+  width: 100%;
+  word-wrap: break-word;      /* 允许长单词换行 */
+  overflow-wrap: break-word;  /* 现代浏览器使用 overflow-wrap */
+  hyphens: auto;              /* 在适当的位置添加连字符 */
+  white-space: normal;        /* 确保文本会换行 */
+}
+
+/* 确保所有文本内容都能换行 */
+td, p, heading {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+}
+</style>
+
+<style>
 body {
   font-family: 'Lora', 'Times New Roman', serif; /* Fallback to generic serif if Lora is not available */
 }
@@ -279,7 +311,7 @@ body {
   </table>
 
   <!-- Honers -->
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
     <tbody>
       <tr>
         <td style="padding:5px;width:100%;vertical-align:middle">
@@ -297,19 +329,17 @@ body {
   </table>
 
   <!-- Academic Service -->
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
     <tbody>
       <tr>
         <td style="padding:5px;width:100%;vertical-align:middle">
           <heading>Academic Services</heading>
           <p><strong>Conference Reviewer:</strong></p>
-          <ul>
-            CVPR'23,24;ICCV'23;NeurIPS'23,24;ECCV'24;AAAI'25;MICCAI'23,24;
-          </ul>
+          <li>CVPR '23, '24; ICCV '23; NeurIPS '23, '24; ECCV '24; AAAI '25; MICCAI '23, '24</li>
           <p><strong>Journal Reviewer:</strong></p>
-          <ul>
+          <p>
             TCSVT;TOMM;TMI
-          </ul>
+          </p>
           <p><strong>Teaching Assistant:</strong></p>
           <ul>
             <li><strong>2019:</strong> MI 321: Course Design of Instrument Bus and Virtual Environment</li>
