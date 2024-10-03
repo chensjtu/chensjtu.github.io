@@ -1,19 +1,326 @@
-<p>Hello 大家好</p>
-<p>我是chensjtu，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
-<p>here are some my personal paper reading links<p>
+<!DOCTYPE HTML>
+<html lang="en">
 
-<ul>
-  <li> <a href="https://i0hnpi8km8.feishu.cn/docs/doccnQSIManJZ7g1EdCbvjuNEFg">depth in nerf</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Chen Yang-SJTU</title>
+
+  <meta name="author" content="Chen Yang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="images/sjtu.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="global.js"></script>
+
+</head>
+
+<!-- <style>
+  body {
+    font-family: 'Times New Roman', Times, serif; /* 首选Times New Roman，如果没有则回退到Times或默认衬线字体 */
+  }
+</style> -->
+
+<!-- <style>
+  body {
+    font-family: 'Calibri', Arial, sans-serif; /* 首选Calibri，如果没有则回退到Arial或默认无衬线字体 */
+  }
+</style> -->
+
+<style>
+body {
+  font-family: 'Lora', 'Times New Roman', serif; /* Fallback to generic serif if Lora is not available */
+}
+</style>
+
+<style>
+  .floating-card {
+    display: flex; /* 使用Flexbox进行布局 */
+    width: 100%; /* 卡片宽度设为100% */
+    border: 1px solid #ccc; /* 可选：为卡片添加边框 */
+    padding: 10px; /* 可选：为卡片添加内边距 */
+    align-items: center; /* 确保卡片内的元素在垂直方向上居中 */
+  }
+
+  .video-container {
+    width: 30%; /* 视频容器宽度设置为30% */
+    display: flex; /* 使用Flexbox对视频进行布局 */
+    align-items: center; /* 垂直居中视频 */
+    justify-content: center; /* 水平居中视频 */
+    height: 100%; /* 设定高度为100%确保足够空间垂直居中 */
+  }
+
+  .image-container {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 如果图像需要覆盖整个区域而不留空白 */
+  }
+
+  .paper-info {
+    width: 70%; /* 剩余内容宽度设置为70% */
+    padding-left: 10px; /* 可选：为文本内容添加一些左边距 */
+  }
+
+  video {
+    width: 100%; /* 视频宽度为100% */
+    height: auto; /* 高度自动，保持视频的纵横比 */
+  }
+
+  papertitle {
+    display: block; /* 让papertitle独占一行 */
+    font-size: 1.0em; /* 设置标题大小 */
+    font-weight: bold; /* 设置标题为粗体 */
+  }
+</style>
+
+<body>
+  <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
+    <tbody>
+        <!-- Title and About section with image on the right -->
+        <tr style="padding:0px">
+            <td style="padding:2.5% 2.5% 0% 2.5%; width:65%; vertical-align:middle">
+                <p style="text-align:center">
+                    <h1>Chen Yang</h1>
+                </p>
+                <p><strong>About:</strong><br>
+                    I am a 4th-year PhD student in Computer Science and Technology at the <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University(SJTU)</a>,
+                    supervised by <a href="https://shenwei1231.github.io/">Prof. Wei Shen</a>. I also completed my bachelor's degree at SJTU in 2019.
+                    Currently, I am a research intern at HUAWEI, working under the guidance of <a href="https://jaminfong.cn/">Dr. Jiemin Fang</a> and <a href="https://www.qitian1987.com/">Dr. Qi Tian</a>.
+                    In 2023, I was honored to receive the <a href="https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/">MICCAI Young Scientist Award</a>.
+                </p>
+            </td>
+            <td style="padding:2.5%; width:35%; vertical-align:middle">
+                <img style="width:75%; max-width:75%" alt="profile photo" src="images/chenyangMICCAI2023.png" class="hoverZoomLink">
+            </td>
+        </tr>
+        <tr style="padding:0px">
+            <td colspan="2" style="padding:0% 2.5% 2.5% 2.5%; width:100%; vertical-align:middle">
+                <p><strong>Research Interests:</strong><br>
+                    My research interests include CV&CG, particularly neural rendering and SLAM systems. I am dedicated to bridging these advanced technologies with practical applications in medical imaging and the general public.
+                    If you are interested in my research or have any questions, please feel free to contact me.
+                </p>
+                <p style="text-align:center">
+                    <a href="mailto:ycyangchen@sjtu.edu.cn">Email</a> &nbsp/&nbsp
+                    <a href="./cv.pdf">CV</a> &nbsp/&nbsp
+                    <a href="https://scholar.google.com/citations?user=StdXTR8AAAAJ&hl">Scholar</a> &nbsp/&nbsp
+                    <a href="https://github.com/chensjtu">Github</a>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+  </table>  
+
+
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:5px;width:100%;vertical-align:middle">
+          <heading>News</heading>
+          <p> <strong>2024-09:</strong> 🎉🎉🎉 <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> is accepted by <strong><em>TOG(SIGGRAPH Asia 2024)</em></strong>. </p>
+          <p> <strong>2024-06:</strong> 🎉🎉🎉 <strong><a href="https://loping151.github.io/endogslam/">EndoGSLAM</a></strong> is accepted by <strong><em>MICCAI 2024</em></strong>. </p>
+          <p> <strong>2024-06:</strong> 🎉🎉🎉 <strong><a href="https://loping151.github.io/endogslam/">Forplane</a></strong> is accepted by <strong><em>TMI</em></strong>. </p>
+          <p> <strong>2024-03:</strong> 🚀🚀🚀 <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> receives over 700 stars🌟! </p>
+          <p> <strong>2024-06:</strong> 🤗🤗🤗 <strong><a href="https://loping151.github.io/endogslam/">Lerplane</a></strong> receives <strong><a href="https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/">MICCAI Young Scientist Award 2023</a></strong>! </p>
+        </td>
+      </tr>
+    </tbody>
+</table>
+
+
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:5px;width:100%;vertical-align:middle">
+          <heading>Selected Publications</heading>
+          <p> For full publications, please refer to my <a href="https://scholar.google.com/citations?user=StdXTR8AAAAJ&hl">Google Scholar</a>. </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="floating-card">
+            <div class="video-container">
+              <video autoplay loop muted controls>
+                <source src="videos/go.mov" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="paper-info">
+              <a href="https://gaussianobject.github.io/">
+                <papertitle>GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting</papertitle>
+              </a>
+              <strong><u>Chen Yang*</u></strong>, Sikuang Li*, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian
+              <br>
+              <strong><em>TOG(SIGGRAPH Asia)</em></strong>, 2024
+              <br>
+              <a href="https://gaussianobject.github.io/">Page</a> / <a href="https://arxiv.org/abs/2402.10259">arXiv</a> /
+              <a href="https://github.com/GaussianObject/GaussianObject">Code</a> / <a href="https://asia.siggraph.org/2024/">ACM Paper</a> /
+              <a href="https://www.youtube.com/watch?v=s5arAXdgdZQ&themeRefresh=1">Video</a> 
+            </div>
+          </div>
+        </td>
+      </tr>
+    
+      <!-- <tr>
+        <td>
+          <div class="floating-card">
+            <div class="video-container">
+              <video autoplay loop muted controls>
+                <source src="https://loping151.github.io/endogslam/static/video/1_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="paper-info">
+              <a href="https://loping151.github.io/endogslam/">
+                <papertitle>EndoGSLAM: Real-Time Dense Reconstruction and Tracking in Endoscopic Surgeries using Gaussian Splatting</papertitle>
+              </a>
+              Kailing Wang*, <strong><u>Chen Yang*</u></strong>, Yuehao Wang, Sikuang Li, Yan Wang, Qi Dou, Xiaokang Yang, Wei Shen
+              <br>
+              <strong><em>MICCAI</em></strong>, 2024
+              <br>
+              <a href="https://loping151.github.io/endogslam/">Page</a> / <a href="https://arxiv.org/abs/2403.15124">arXiv</a> /
+              <a href="https://github.com/Loping151/EndoGSLAM">Code</a> / <a href="https://drive.google.com/drive/folders/1wT4cILcbf4TUlWlmK_wJPiIrZ2AqZ43W?usp=drive_link">Data</a>
+            </div>
+          </div>
+        </td>
+      </tr> -->
+
+      <tr>
+        <td>
+          <div class="floating-card">
+            <div class="paper-card-content">
+              <div class="image-container">
+                <video autoplay loop muted controls>
+                  <source src="videos/sa3d.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="paper-info">
+                <a href="https://jumpat.github.io/SA3D/">
+                  <papertitle>Segment Anything in 3D with NeRFs</papertitle>
+                </a>
+                Jiazhong Cen*, Zanwei Zhou*, Jiemin Fang, <strong><u>Chen Yang</u></strong>, 
+                Wei Shen, Lingxi Xie, Dongsheng Jiang, Xiaopeng Zhang, Qi Tian
+                <br>
+                <strong><em>NeurIPS</em></strong>, 2023
+                <br>
+                <a href="https://jumpat.github.io/SA3D/">Page</a> / <a href="https://arxiv.org/abs/2304.12308">arXiv</a> /
+                <a href="https://github.com/Jumpat/SegmentAnythingin3D">Code</a> 
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="floating-card">
+            <div class="video-container">
+              <video autoplay loop muted controls>
+                <source src="videos/lerplane.mov" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="paper-info">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-43996-4_5">
+                <papertitle>Lerplane: Neural Representations for Fast 4D Reconstruction of Deformable Tissues</papertitle>
+              </a>
+              <strong><u>Chen Yang</strong></u>, Kailing Wang, Yuehao Wang, Xiaokang Yang, Wei Shen
+              <br>
+              <strong><em>MICCAI</em></strong>, 2023, <strong>Oral</strong>, <strong>Young Scientist Award</strong>
+              <br>
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-43996-4_5">Paper</a> /
+              <a href="https://github.com/Loping151/ForPlane">Code</a>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="floating-card">
+          <div class="video-container">
+            <video autoplay loop muted controls>
+              <source src="videos/nerfvs.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="paper-info">
+            <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_NeRFVS_Neural_Radiance_Fields_for_Free_View_Synthesis_via_Geometry_CVPR_2023_paper.pdf">
+              <papertitle>NeRFVS: Neural Radiance Fields for Free View Synthesis via Geometry Scaffolds</papertitle>
+            </a>
+            <strong><u>Chen Yang</strong></u>, Peihao Li, Zanwei Zhou, Shanxin Yuan, Bingbing Liu, Xiaokang Yang, Weichao Qiu, Wei Shen
+            <br>
+            <strong><em>CVPR</em></strong>, 2023
+            <br>
+            <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_NeRFVS_Neural_Radiance_Fields_for_Free_View_Synthesis_via_Geometry_CVPR_2023_paper.pdf">Paper</a> /
+            <a href="https://arxiv.org/abs/2304.06287">Code</a>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+    </tbody>
+  </table>
+
+  <!-- Honers -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:5px;width:100%;vertical-align:middle">
+          <heading>Honors and Awards</heading>
+          <ul>
+            <li><strong>2023:</strong> Intel Scholarship</li>
+            <li><strong>2023:</strong> MICCAI Young Scientist Award</li>
+            <li><strong>2022:</strong> 2nd Prize of National Post-Graduate Mathematical Contest</li>
+            <li><strong>2021:</strong> National Scholarship</li>
+            <li><strong>2021:</strong> 1st Prize of Huawei Chinese University ICT Competition</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Academic Service -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:5px;width:100%;vertical-align:middle">
+          <heading>Academic Services</heading>
+          <p><strong>Conference Reviewer:</strong></p>
+          <ul>
+            CVPR'23,24;ICCV'23;NeurIPS'23,24;ECCV'24;AAAI'25;MICCAI'23,24;
+          </ul>
+          <p><strong>Journal Reviewer:</strong></p>
+          <ul>
+            TCSVT;TOMM;TMI
+          </ul>
+          <p><strong>Teaching Assistant:</strong></p>
+          <ul>
+            <li><strong>2019:</strong> MI 321: Course Design of Instrument Bus and Virtual Environment</li>
+            <li><strong>2020:</strong> MI 318: Measuring and Controlling Circuit</li>
+            <li><strong>2021:</strong> EE 334: Industrial Measurement and Control Technology and System</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
