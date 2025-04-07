@@ -135,9 +135,42 @@ body {
                     In 2023, I was honored to receive the <a href="https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/">MICCAI Young Scientist Award</a>.
                 </p>
             </td>
-            <td style="padding:2.5%; width:35%; vertical-align:middle">
-                <img style="width:75%; max-width:75%" alt="profile photo" src="images/siga2.png" class="hoverZoomLink">
-            </td>
+
+            <style>
+              .img-hover-container {
+                  position: relative;
+                  width: 75%;
+                  max-width: 75%;
+              }
+              
+              .img-hover-container img {
+                  width: 100%;
+                  display: block;
+              }
+              
+              .img-hover-container .hover-image {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  opacity: 0;
+                  transition: opacity 0.3s ease;
+              }
+              
+              .img-hover-container:hover .hover-image {
+                  opacity: 1;
+              }
+              </style>
+              
+              <td style="padding:2.5%; width:35%; vertical-align:middle">
+                  <div class="img-hover-container">
+                      <img src="images/chenyangSIGA.jpg" alt="profile photo">
+                      <img src="images/chenyangghibli.jpg" alt="hover photo" class="hover-image">
+                  </div>
+              </td>
+              
+            <!-- <td style="padding:2.5%; width:35%; vertical-align:middle">
+                <img style="width:75%; max-width:75%" alt="profile photo" src="images/chenyangSIGA.jpg" class="hoverZoomLink">
+            </td> -->
         </tr>
         <tr style="padding:0px">
             <td colspan="2" style="padding:0% 2.5% 2.5% 2.5%; width:100%; vertical-align:middle">
