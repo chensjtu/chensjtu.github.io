@@ -117,6 +117,12 @@ body {
     font-size: 1.0em; /* 设置标题大小 */
     font-weight: bold; /* 设置标题为粗体 */
   }
+
+  .news-date {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+  }
 </style>
 
 <body>
@@ -126,12 +132,12 @@ body {
         <tr style="padding:0px">
             <td style="padding:2.5% 2.5% 0% 2.5%; width:65%; vertical-align:middle">
                 <p style="text-align:center">
+                    <!-- <h1>Chen Yang (杨 辰)</h1> -->
                     <h1>Chen Yang</h1>
                 </p>
                 <p><strong>About:</strong><br>
-                    I am a 4th-year PhD student in Computer Science and Technology at the <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University(SJTU)</a>,
-                    supervised by <a href="https://shenwei1231.github.io/">Prof. Wei Shen</a>. I also completed my bachelor's degree at SJTU in 2019.
-                    Currently, I am a research intern at HUAWEI, working under the guidance of <a href="https://jaminfong.cn/">Dr. Jiemin Fang</a> and <a href="https://www.qitian1987.com/">Dr. Qi Tian</a>.
+                    I am a Senior Researcher at HUAWEI, currently working under the guidance of <a href="https://jaminfong.cn/">Dr. Jiemin Fang</a> and <a href="https://www.qitian1987.com/">Dr. Qi Tian</a>.
+                    I received my Ph.D. in Computer Science and Technology from <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a> in 2025, supervised by <a href="https://shenwei1231.github.io/">Prof. Wei Shen</a>, and completed my bachelor's degree at SJTU in 2019.
                     In 2023, I was honored to receive the <a href="https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/">MICCAI Young Scientist Award</a>.
                 </p>
             </td>
@@ -175,8 +181,7 @@ body {
         <tr style="padding:0px">
             <td colspan="2" style="padding:0% 2.5% 2.5% 2.5%; width:100%; vertical-align:middle">
                 <p><strong>Research Interests:</strong><br>
-                    My research interests include CV&CG, particularly neural rendering and SLAM systems. I am dedicated to bridging these advanced technologies with practical applications in medical imaging and the general public.
-                    I have proposed some thoughts about the future of neural rendering based 3D reconstruction in the following `Thoughts` section.
+                    My research focuses on developing <strong><a href="https://world-grow.github.io/">world models</a></strong> for embodied AI towards AGI, with particular emphasis on <strong><a href="https://unilat3d.github.io/">pretrained 3D generation models</a></strong> and <strong><a href="https://gaussianobject.github.io/">3D reconstruction</a></strong>. I believe world models represent the inevitable path to AGI.
                     If you are interested in my research or have any questions, please feel free to contact me.
                 </p>
                 <p style="text-align:center">
@@ -197,12 +202,14 @@ body {
       <tr>
         <td style="padding:5px;width:100%;vertical-align:middle">
           <heading>News</heading>
-          <p> <strong>2025-02:</strong> 🚀🚀🚀 <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> receives over <strong><em>1000</em></strong> stars🌟! </p>
-          <p> <strong>2024-12:</strong> 💪💪💪 <strong><a href="https://jumpat.github.io/SAGA/">SAGA</a></strong> is finally accepted by <strong><em>AAAI 2025</em></strong>. </p>
-          <p> <strong>2024-09:</strong> 🤗🤗🤗 <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> is accepted by <strong><em>TOG(SIGGRAPH Asia 2024)</em></strong>. </p>
-          <p> <strong>2024-06:</strong> 🎉🎉🎉 <strong><a href="https://loping151.github.io/endogslam/">EndoGSLAM</a></strong> is accepted by <strong><em>MICCAI 2024</em></strong>. </p>
-          <p> <strong>2024-04:</strong> 🎉🎉🎉 <strong><a href="https://loping151.github.io/endogslam/">Forplane</a></strong> is accepted by <strong><em>TMI</em></strong>. </p>
-          <p> <strong>2023-10:</strong> 🤗🤗🤗 <strong><a href="https://loping151.github.io/endogslam/">Lerplane</a></strong> receives <strong><a href="https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/">MICCAI Young Scientist Award 2023</a></strong>! </p>
+          <p> <span class="news-date"><strong>2025-11:</strong></span> 💪💪💪 <strong><a href="https://world-grow.github.io/">WorldGrow</a></strong> is accepted as <strong><em>Oral</em></strong> presentation in <strong><em>AAAI 2026</em></strong>! </p>
+          <p> <span class="news-date"><strong>2025-11:</strong></span> 🎉🎉🎉 Three papers accepted to <strong><em>AAAI 2026</em></strong>. </p>
+          <p> <span class="news-date"><strong>2025-02:</strong></span> 🚀🚀🚀 <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> receives over <strong><em>1000</em></strong> stars🌟! </p>
+          <!-- <p> <span class="news-date"><strong>2024-12:</strong></span> 💪💪💪 <strong><a href="https://jumpat.github.io/SAGA/">SAGA</a></strong> is finally accepted by <strong><em>AAAI 2025</em></strong>. </p> -->
+          <p> <span class="news-date"><strong>2024-09:</strong></span> 🤗🤗🤗 <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> is accepted by <strong><em>TOG(SIGGRAPH Asia 2024)</em></strong>. </p>
+          <p> <span class="news-date"><strong>2024-06:</strong></span> 🎉🎉🎉 <strong><a href="https://loping151.github.io/endogslam/">EndoGSLAM</a></strong> is accepted by <strong><em>MICCAI 2024</em></strong>. </p>
+          <p> <span class="news-date"><strong>2024-04:</strong></span> 🎉🎉🎉 <strong><a href="https://loping151.github.io/endogslam/">Forplane</a></strong> is accepted by <strong><em>TMI</em></strong>. </p>
+          <p> <span class="news-date"><strong>2023-10:</strong></span> 🤗🤗🤗 <strong><a href="https://loping151.github.io/endogslam/">Lerplane</a></strong> receives <strong><a href="https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/">MICCAI Young Scientist Award 2023</a></strong>! </p>
         </td>
       </tr>
     </tbody>
@@ -214,6 +221,30 @@ body {
       <tr>
         <td style="padding:5px;width:100%;vertical-align:middle">
           <heading>Selected Publications</heading>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="floating-card">
+            <div class="video-container">
+              <video autoplay loop muted controls>
+                <source src="videos/worldgrow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="paper-info">
+              <a href="https://world-grow.github.io/">
+                <papertitle>WorldGrow: Generating Infinite 3D World</papertitle>
+              </a>
+              Sikuang Li*, <strong><u>Chen Yang*</u></strong>, Jiemin Fang, Taoran Yi, Jia Lu, Jiazhong Cen, Lingxi Xie, Wei Shen, Qi Tian
+              <br>
+              <strong><em>AAAI</em></strong>, 2026, <strong>Oral</strong>
+              <br>
+              <a href="https://world-grow.github.io/">Page</a> / <a href="https://arxiv.org/abs/2510.21682">arXiv</a> /
+              <a href="https://github.com/world-grow/WorldGrow">Code</a> / <a href="https://www.youtube.com/watch?v=blVXMwGHQO4">Video</a>
+            </div>
+          </div>
         </td>
       </tr>
 
@@ -242,7 +273,7 @@ body {
         </td>
       </tr>
     
-      <tr>
+      <!-- <tr>
         <td>
           <div class="floating-card">
             <div class="video-container">
@@ -264,7 +295,7 @@ body {
             </div>
           </div>
         </td>
-      </tr>
+      </tr> -->
 
       <tr>
         <td>
@@ -371,10 +402,10 @@ body {
         <td style="padding:5px;width:100%;vertical-align:middle">
           <heading>Academic Services</heading>
           <p><strong>Conference Reviewer:</strong></p>
-          <li>CVPR '23, '24, '25'; ICCV '23, '25; NeurIPS '23, '24, '25; ECCV '24; AAAI '25; MICCAI '23, '24, '25</li>
+          CVPR; ICCV; ECCV; NeurIPS; ICLR; ICML; AAAI; MICCAI; SIGGRAPH; SIGGRAPH Asia
           <p><strong>Journal Reviewer:</strong></p>
           <p>
-            <li>TOG; TMI; TCSVT; TOMM</li>
+          TOG; TMI; TPAMI; TVCG; TIP; TCSVT; TOMM
           </p>
           <p><strong>Teaching Assistant:</strong></p>
           <ul>
@@ -387,7 +418,7 @@ body {
     </tbody>
   </table>
 
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr>
         <td style="padding:5px;width:100%;vertical-align:middle">
@@ -396,102 +427,131 @@ body {
   
           <h3>2025</h3>
           <p>
-            Jiazhong Cen, Jiemin Fang, <strong><u>Chen Yang</u></strong>, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian. 
-            Segment Any 3D Gaussians. 
+            Guanjun Wu*, Jiemin Fang*, <strong><u>Chen Yang*</u></strong>, Sikuang Li, Taoran Yi, Jia Lu, Zanwei Zhou, Jiazhong Cen, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Xinggang Wang, Qi Tian.
+            <a href="https://unilat3d.github.io/">UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation</a>.
+            arXiv preprint, 2025.
+          </p>
+
+          <p>
+            Sikuang Li*, <strong><u>Chen Yang*</u></strong>, Jiemin Fang, Taoran Yi, Jia Lu, Jiazhong Cen, Lingxi Xie, Wei Shen, Qi Tian.
+            <a href="https://world-grow.github.io/">WorldGrow: Infinite 3D Scene Generation with Structured Latents</a>.
+            <strong><em>AAAI</em></strong>, 2026. <strong><em>(Oral)</em></strong>
+          </p>
+
+          <p>
+            Jichen Hu*, <strong><u>Chen Yang*</u></strong>, Zanwei Zhou, Jiemin Fang, Qi Tian, Wei Shen.
+            <a href="https://abuuu122.github.io/DAI.github.io/">Dereflection Any Image with Diffusion Priors and Diversified Data</a>.
+            <a href="https://arxiv.org/abs/2503.17347">arXiv</a> / <strong><em>AAAI</em></strong>, 2026.
+          </p>
+
+          <p>
+            Zanwei Zhou, Taoran Yi, Jiemin Fang, <strong><u>Chen Yang</u></strong>, Lingxi Xie, Xinggang Wang, Wei Shen, Qi Tian.
+            <a href="https://zanue.github.io/mdt-dist/">Few-step Diffusion for 3D Generation by Learning Marginal Probability Path</a>.
+            <a href="https://arxiv.org/abs/2509.04406">arXiv</a> / <strong><em>AAAI</em></strong>, 2026.
+          </p>
+          <p>
+            Jiazhong Cen, Jiemin Fang, <strong><u>Chen Yang</u></strong>, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian.
+            <a href="https://arxiv.org/abs/2412.08031">Segment Any 3D Gaussians</a>.
             <strong><em>AAAI</em></strong>, 2025.
+          </p>
+
+          <p>
+            Zanwei Zhou, <strong><u>Chen Yang</u></strong>, Piao Yang, Xiaokang Yang, Wei Shen.
+            <a href="https://arxiv.org/abs/2412.08032">EndoDAV: Depth Any Video in Endoscopy with Spatiotemporal Accuracy</a>.
+            <strong><em>MICCAI</em></strong>, 2025.
           </p>
 
           <h3>2024</h3>
           <p>
-            <strong><u>Chen Yang*</u></strong>, Sikuang Li*, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian. 
-            GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting. 
+            Yabo Chen*, <strong><u>Chen Yang*</u></strong>, Jiemin Fang, Xiaopeng Zhang, Lingxi Xie, Wei Shen, Wenrui Dai, Hongkai Xiong, Qi Tian.
+            <a href="https://arxiv.org/abs/2412.09597">LiftImage3D: Lifting any single image to 3D Gaussians with video generation priors.</a>
+            arXiv preprint, 2024.
+          </p>
+
+          <p>
+            <strong><u>Chen Yang*</u></strong>, Sikuang Li*, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian.
+            <a href="https://gaussianobject.github.io/">GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting</a>.
             <strong><em>ACM Trans. Graphics (Siggraph Asia)</em></strong>, 2024.
           </p>
   
           <p>
-            <strong><u>Chen Yang*</u></strong>, Kailing Wang*, Yuehao Wang, Sikuang Li, Yan Wang, Qi Dou, Xiaokang Yang, Wei Shen. 
-            EndoGSLAM: Real-time Dense Reconstruction and Tracking in Endoscopic Surgeries using Gaussian Splatting. 
+            <strong><u>Chen Yang*</u></strong>, Kailing Wang*, Yuehao Wang, Sikuang Li, Yan Wang, Qi Dou, Xiaokang Yang, Wei Shen.
+            <a href="https://loping151.github.io/endogslam/">EndoGSLAM: Real-time Dense Reconstruction and Tracking in Endoscopic Surgeries using Gaussian Splatting</a>.
             <strong><em>MICCAI</em></strong>, 2024.
           </p>
   
           <p>
-            <strong><u>Chen Yang</u></strong>, Kailing Wang, Yuehao Wang, Qi Dou, Xiaokang Yang, Wei Shen. 
-            Efficient Deformable Tissue Reconstruction via Orthogonal Neural Plane. 
+            <strong><u>Chen Yang</u></strong>, Kailing Wang, Yuehao Wang, Qi Dou, Xiaokang Yang, Wei Shen.
+            <a href="https://ieeexplore.ieee.org/document/10494102">Efficient Deformable Tissue Reconstruction via Orthogonal Neural Plane</a>.
             <strong><em>IEEE Trans. Medical Imaging (TMI)</em></strong>, 2024.
-          </p>
-  
-          <p>
-            Yichao Yan, Zanwei Zhou, Zi Wang, <strong><u>Chen Yang</u></strong>, Jingnan Gao, Xiaokang Yang. 
-            DialogueNeRF: Towards Realistic Avatar Face-to-Face Conversation Video Generation. 
-            <strong><em>Visual Intelligence</em></strong>, 2024.
           </p>
 
           <p>
             Kailing Wang*, <strong><u>Chen Yang*</u></strong>, Keyang Zhao, Xiaokang Yang, Wei Shen.
-            Realistic surgical simulation from monocular videos.
+            <a href="https://arxiv.org/abs/2403.17744">Realistic surgical simulation from monocular videos</a>.
             arXiv preprint, 2024.
           </p>
 
           <p>
-            <strong><u>Chen Yang*</u></strong>, Haoyu Zhao*, Hao Wang, Xingyue Zhao, Wei Shen. 
-            SG-GS: Photo-realistic Animatable Human Avatars with Semantically-Guided Gaussian Splatting. 
+            <strong><u>Chen Yang*</u></strong>, Haoyu Zhao*, Hao Wang, Xingyue Zhao, Wei Shen.
+            <a href="https://arxiv.org/abs/2404.11368">SG-GS: Photo-realistic Animatable Human Avatars with Semantically-Guided Gaussian Splatting</a>.
             arXiv preprint, 2024.
           </p>
   
           <p>
-            <strong><u>Chen Yang*</u></strong>, Haoyu Zhao*, Hao Wang, Wei Shen. 
-            CHASE: 3D-Consistent Human Avatars with Sparse Inputs via Gaussian Splatting and Contrastive Learning. 
+            <strong><u>Chen Yang*</u></strong>, Haoyu Zhao*, Hao Wang, Wei Shen.
+            <a href="https://arxiv.org/abs/2404.10642">CHASE: 3D-Consistent Human Avatars with Sparse Inputs via Gaussian Splatting and Contrastive Learning</a>.
             arXiv preprint, 2024.
           </p>
   
           <h3>2023</h3>
           <p>
-            Jiazhong Cen*, Zanwei Zhou*, Jiemin Fang, <strong><u>Chen Yang</u></strong>, Wei Shen, Lingxi Xie, Dongsheng Jiang, Xiaopeng Zhang, Qi Tian. 
-            Segment Anything in 3D with NeRFs. 
+            Jiazhong Cen*, Zanwei Zhou*, Jiemin Fang, <strong><u>Chen Yang</u></strong>, Wei Shen, Lingxi Xie, Dongsheng Jiang, Xiaopeng Zhang, Qi Tian.
+            <a href="https://jumpat.github.io/SA3D/">Segment Anything in 3D with NeRFs</a>.
             <strong><em>NeurIPS</em></strong>, 2023.
           </p>
   
           <p>
-            <strong><u>Chen Yang</u></strong>, Kailing Wang, Yuehao Wang, Xiaokang Yang, Wei Shen. 
-            Neural Lerplane Representations for Fast 4D Reconstruction of Deformable Tissues. 
+            <strong><u>Chen Yang</u></strong>, Kailing Wang, Yuehao Wang, Xiaokang Yang, Wei Shen.
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-43996-4_5">Neural Lerplane Representations for Fast 4D Reconstruction of Deformable Tissues</a>.
             <strong><em>MICCAI</em></strong>, 2023. <strong><em>(Oral, Young Scientist Award)</em></strong>
           </p>
   
           <p>
-            <strong><u>Chen Yang</u></strong>, Peihao Li, Zanwei Zhou, Shanxin Yuan, Bingbing Liu, Xiaokang Yang, Weichao Qiu, Wei Shen. 
-            NeRFVS: Neural Radiance Fields for Free View Synthesis via Geometry Scaffolds. 
+            <strong><u>Chen Yang</u></strong>, Peihao Li, Zanwei Zhou, Shanxin Yuan, Bingbing Liu, Xiaokang Yang, Weichao Qiu, Wei Shen.
+            <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_NeRFVS_Neural_Radiance_Fields_for_Free_View_Synthesis_via_Geometry_CVPR_2023_paper.pdf">NeRFVS: Neural Radiance Fields for Free View Synthesis via Geometry Scaffolds</a>.
             <strong><em>CVPR</em></strong>, 2023.
           </p>
   
           <p>
-            Peihao Li, Shaohui Wang, <strong><u>Chen Yang</u></strong>, Bingbing Liu, Weichao Qiu, Haoqian Wang. 
-            NeRF-MS: Neural Radiance Fields with Multi-Sequence. 
+            Peihao Li, Shaohui Wang, <strong><u>Chen Yang</u></strong>, Bingbing Liu, Weichao Qiu, Haoqian Wang.
+            <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Li_NeRF-MS_Neural_Radiance_Fields_with_Multi-Sequence_ICCV_2023_paper.pdf">NeRF-MS: Neural Radiance Fields with Multi-Sequence</a>.
             <strong><em>ICCV</em></strong>, 2023.
           </p>
   
           <h3>2022</h3>
           <p>
-            <strong><u>Chen Yang</u></strong>, Shun-Yu Yao, Zan-Wei Zhou, Bin Ji, Guang-Tao Zhai, Wei Shen. 
-            Poxture: Human Posture Imitation Using Neural Texture. 
+            <strong><u>Chen Yang</u></strong>, Shun-Yu Yao, Zan-Wei Zhou, Bin Ji, Guang-Tao Zhai, Wei Shen.
+            <a href="https://ieeexplore.ieee.org/document/9764674">Poxture: Human Posture Imitation Using Neural Texture</a>.
             <strong><em>IEEE Trans. Circuits and Systems for Video Technology (TCSVT)</em></strong>, 2022.
           </p>
   
           <p>
-            Zanwei Zhou, Ruizhe Zhong, <strong><u>Chen Yang</u></strong>, Yan Wang, Xiaokang Yang, Wei Shen. 
-            A k-variate Time Series is Worth k Words: Evolution of the Vanilla Transformer Architecture for Long-term Multivariate Time Series Forecasting. 
+            Zanwei Zhou, Ruizhe Zhong, <strong><u>Chen Yang</u></strong>, Yan Wang, Xiaokang Yang, Wei Shen.
+            <a href="https://arxiv.org/abs/2209.09904">A k-variate Time Series is Worth k Words: Evolution of the Vanilla Transformer Architecture for Long-term Multivariate Time Series Forecasting</a>.
             arXiv preprint, 2022.
           </p>
   
           <p>
-            Ruofan Liang, Jiahao Zhang, Haoda Li, <strong><u>Chen Yang</u></strong>, Yushi Guan, Nandita Vijaykumar. 
-            SPIDR: SDF-based Neural Point Fields for Illumination and Deformation. 
+            Ruofan Liang, Jiahao Zhang, Haoda Li, <strong><u>Chen Yang</u></strong>, Yushi Guan, Nandita Vijaykumar.
+            <a href="https://openaccess.thecvf.com/content/CVPR2022W/NeuralGF/papers/Liang_SPIDR_SDF-Based_Neural_Point_Fields_for_Illumination_and_Deformation_CVPRW_2022_paper.pdf">SPIDR: SDF-based Neural Point Fields for Illumination and Deformation</a>.
             <strong><em>CVPR Workshop</em></strong>, 2022.
           </p>
   
           <h3>2021</h3>
           <p>
-            Bin Ji, <strong><u>Chen Yang</u></strong>, Shunyu Yao, Ye Pan. 
-            HPOF: 3D Human Pose Recovery from Monocular Video with Optical Flow. 
+            Bin Ji, <strong><u>Chen Yang</u></strong>, Shunyu Yao, Ye Pan.
+            <a href="https://dl.acm.org/doi/10.1145/3460426.3463663">HPOF: 3D Human Pose Recovery from Monocular Video with Optical Flow</a>.
             <strong><em>ICMR</em></strong>, 2021.
           </p>
         </td>
