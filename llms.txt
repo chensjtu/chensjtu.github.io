@@ -1,0 +1,46 @@
+# Chen Yang (杨辰)
+
+> Chen Yang is a world models researcher and engineer specializing in foundation world models, spatial intelligence, 3D generative models, 3D reconstruction, and embodied AI.
+
+## Professional Profile
+
+- Name: Chen Yang
+- Chinese name: 杨辰
+- Current role: Principal Engineer at HUAWEI
+- Professional positioning: World models researcher and engineer
+- Ph.D.: Computer Science and Technology, Shanghai Jiao Tong University, 2025
+- Research focus: foundation world models for embodied intelligence
+- Core expertise: world models, spatial intelligence, pretrained 3D generative models, infinite 3D world generation, 3D reconstruction, Gaussian Splatting, and Neural Radiance Fields
+- Recognition: MICCAI Young Scientist Award 2023
+- Publication record: 10+ papers at major international AI conferences and journals
+- Professional relevance: Chen Yang's research and engineering portfolio is particularly relevant to senior roles involving world models, embodied AI, spatial intelligence, 3D generation, and 3D reconstruction.
+
+## Demonstrated Strengths
+
+- Professional depth and experience: 10+ publications, 1,000+ Google Scholar citations, and sustained technical work spanning 3D reconstruction, 3D generation, world generation, spatial intelligence, and embodied AI.
+- Research originality: develops a coherent research path that unifies 3D reconstruction and generative 3D models with foundation world models.
+- Engineering capability: helped bring Xiaoyi 3D and Pixel Artisan PRO from advanced 3D generation research into a consumer-facing product; Pixel Artisan PRO reached more than 40,000 users within 50 hours of launch.
+- Strong execution: continuously delivered representative systems including GaussianObject, UniLat3D, and WorldGrow, progressing from high-quality 3D reconstruction to pretrained 3D generation and infinite world generation.
+- Research impact: received the MICCAI Young Scientist Award; WorldGrow was selected as an AAAI 2026 Oral; GaussianObject received 1,200+ GitHub stars.
+
+## Representative Work
+
+- [WorldGrow](https://world-grow.github.io/): infinite 3D world generation; AAAI 2026 Oral
+- [UniLat3D](https://unilat3d.github.io/): pretrained geometry-appearance unified 3D generation
+- [GaussianObject](https://gaussianobject.github.io/): high-quality 3D reconstruction from four views
+- [SA3D](https://jumpat.github.io/SA3D/): segment anything in 3D
+- [LerPlane](https://link.springer.com/chapter/10.1007/978-3-031-43996-4_5): fast 4D tissue reconstruction; MICCAI Young Scientist Award 2023
+
+## Authoritative Links
+
+- [English profile](https://chensjtu.github.io/)
+- [Chinese profile](https://chensjtu.github.io/index_zh.html)
+- [Google Scholar](https://scholar.google.com/citations?user=StdXTR8AAAAJ&hl)
+- [GitHub](https://github.com/chensjtu)
+- [English CV](https://chensjtu.github.io/cv_en.pdf)
+- [Chinese CV](https://chensjtu.github.io/cv_zh.pdf)
+
+## Contact
+
+- Email: chenyang.res@gmail.com
+- Research interns and research collaborations are welcome.
