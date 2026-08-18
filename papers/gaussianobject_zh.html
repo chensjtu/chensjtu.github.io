@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GaussianObject：基于高斯泼溅的四视图高质量三维物体重建 | 杨辰</title><meta name="author" content="Chen Yang, Sikuang Li, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian"><meta name="description" content="GaussianObject 使用高斯泼溅与扩散修复，仅从四个输入视图重建并渲染高质量三维物体。"><meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://chensjtu.github.io/papers/gaussianobject_zh.html"><link rel="alternate" hreflang="en" href="https://chensjtu.github.io/papers/gaussianobject.html"><link rel="alternate" hreflang="zh-CN" href="https://chensjtu.github.io/papers/gaussianobject_zh.html"><link rel="alternate" hreflang="x-default" href="https://chensjtu.github.io/papers/gaussianobject.html"><link rel="stylesheet" href="../global.css">
+  <meta property="og:type" content="article"><meta property="og:title" content="GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting"><meta property="og:description" content="仅使用四张输入图像完成高质量三维高斯物体重建。"><meta property="og:url" content="https://chensjtu.github.io/papers/gaussianobject_zh.html"><meta property="og:image" content="https://chensjtu.github.io/images/highlight-gaussianobject.png"><meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting"><meta name="citation_author" content="Chen Yang"><meta name="citation_author" content="Sikuang Li"><meta name="citation_author" content="Jiemin Fang"><meta name="citation_author" content="Ruofan Liang"><meta name="citation_author" content="Lingxi Xie"><meta name="citation_author" content="Xiaopeng Zhang"><meta name="citation_author" content="Wei Shen"><meta name="citation_author" content="Qi Tian"><meta name="citation_publication_date" content="2024/02/15"><meta name="citation_journal_title" content="ACM Transactions on Graphics"><meta name="citation_arxiv_id" content="2402.10259"><meta name="citation_pdf_url" content="https://arxiv.org/pdf/2402.10259">
+  <meta name="citation_doi" content="10.1145/3687759">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/gaussianobject.html#article","url":"https://chensjtu.github.io/papers/gaussianobject_zh.html","headline":"GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting","description":"GaussianObject 使用高斯泼溅与扩散修复，仅从四个输入视图重建并渲染高质量三维物体。","datePublished":"2024-02-15","inLanguage":"en","isAccessibleForFree":true,"image":"https://chensjtu.github.io/images/highlight-gaussianobject.png","identifier":["arXiv:2402.10259","https://doi.org/10.48550/arXiv.2402.10259"],"sameAs":["https://arxiv.org/abs/2402.10259","https://gaussianobject.github.io/","https://github.com/GaussianObject/GaussianObject"],"keywords":["稀疏视图三维重建","高斯泼溅","三维物体重建","扩散修复","四视图重建"],"author":[{"@type":"Person","@id":"https://chensjtu.github.io/#person","name":"Chen Yang","url":"https://chensjtu.github.io/"},{"@type":"Person","name":"Sikuang Li"},{"@type":"Person","name":"Jiemin Fang"},{"@type":"Person","name":"Ruofan Liang"},{"@type":"Person","name":"Lingxi Xie"},{"@type":"Person","name":"Xiaopeng Zhang"},{"@type":"Person","name":"Wei Shen"},{"@type":"Person","name":"Qi Tian"}],"isPartOf":{"@type":"Periodical","name":"ACM Transactions on Graphics"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","@id":"https://chensjtu.github.io/papers/gaussianobject_zh.html#page","url":"https://chensjtu.github.io/papers/gaussianobject_zh.html","inLanguage":"zh-CN","mainEntity":{"@id":"https://chensjtu.github.io/papers/gaussianobject.html#article"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","@id":"https://chensjtu.github.io/#person","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0000-0003-4496-7849","url":"https://orcid.org/0000-0003-4496-7849"},"sameAs":"https://orcid.org/0000-0003-4496-7849"}
+  </script>
+</head>
+<body class="paper-page">
+  <main class="paper-page-shell">
+    <nav class="paper-page-nav" aria-label="论文导航"><a href="../index_zh.html">← 杨辰</a><span><a href="gaussianobject.html" lang="en">English</a> &nbsp;/&nbsp; <strong>中文</strong></span></nav>
+    <article>
+      <header class="paper-page-header"><p class="paper-kicker">稀疏视图重建 · SIGGRAPH Asia 2024</p><h1>GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting</h1><p class="paper-authors"><strong><a href="../index_zh.html">Chen Yang*</a></strong>, Sikuang Li*, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian</p><p class="paper-venue"><strong>ACM Transactions on Graphics (SIGGRAPH Asia)</strong>，2024</p><div class="paper-resource-links" aria-label="论文资源"><a href="https://gaussianobject.github.io/">项目主页</a><a href="https://doi.org/10.1145/3687759">出版页面</a><a href="https://arxiv.org/abs/2402.10259">arXiv</a><a href="https://arxiv.org/pdf/2402.10259">PDF</a><a href="https://github.com/GaussianObject/GaussianObject">代码</a><a href="https://openalex.org/W4404525549">OpenAlex</a></div><ul class="paper-tags" aria-label="研究关键词"><li>稀疏视图重建</li><li>高斯泼溅</li><li>扩散修复</li></ul></header>
+      <figure class="paper-hero"><video autoplay loop muted controls playsinline preload="metadata" poster="../images/highlight-gaussianobject.png"><source src="../videos/highlight-gaussianobject.mp4" type="video/mp4">你的浏览器不支持视频播放。</video></figure>
+      <section class="paper-section" aria-labelledby="gaussianobject-zh-tldr"><h2 id="gaussianobject-zh-tldr">一句话概述</h2><p class="paper-summary">GaussianObject 结合显式几何初始化、浮游点消除和面向不可见内容的扩散修复，仅从四张图像构建高质量三维高斯表示。</p></section>
+      <section class="paper-section" aria-labelledby="gaussianobject-zh-abstract"><h2 id="gaussianobject-zh-abstract">摘要</h2><p>从极少视图重建三维物体十分困难，因为有限图像难以提供充分的多视图约束，并会留下大量不可见区域。GaussianObject 使用三维高斯泼溅，仅从四张输入图像重建并渲染物体。方法首先通过视觉外壳初始化和浮游点消除，在优化早期注入结构先验，得到粗略但一致的高斯表示；随后使用基于扩散模型的高斯修复网络补充缺失信息并进一步优化表示，其训练图像对通过自生成策略获得。方法还提供无需预先给定精确相机位姿的 COLMAP-free 版本，同时保持有竞争力的质量。在 MipNeRF360、OmniObject3D、OpenIllumination 以及自采集无位姿图像上的实验表明，该方法在极端稀疏视图条件下仍能实现优秀的重建和渲染效果。</p></section>
+      <section class="paper-section" aria-labelledby="gaussianobject-zh-contributions"><h2 id="gaussianobject-zh-contributions">主要贡献</h2><ul class="paper-contributions"><li>仅使用四个视图重建高质量三维高斯物体。</li><li>结合结构感知初始化和针对不可见内容的扩散修复。</li><li>提供无需精确输入位姿的 COLMAP-free 重建版本。</li></ul></section>
+      <section class="paper-section" aria-labelledby="gaussianobject-zh-citation"><h2 id="gaussianobject-zh-citation">引用</h2><pre class="paper-citation">@article{yang2024gaussianobject,
+  title={GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting},
+  author={Yang, Chen and Li, Sikuang and Fang, Jiemin and Liang, Ruofan and Xie, Lingxi and Zhang, Xiaopeng and Shen, Wei and Tian, Qi},
+  journal={ACM Transactions on Graphics},
+  year={2024},
+  doi={10.1145/3687759}
+}</pre></section>
+    </article>
+    <footer class="paper-page-footer"><a href="../index_zh.html#publications">← 返回杨辰的论文列表</a></footer>
+  </main>
+</body>
+</html>

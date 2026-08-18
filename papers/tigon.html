@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIGON — Text-Image Conditioned 3D Generation | Chen Yang</title>
+  <meta name="author" content="Jiazhong Cen, Jiemin Fang, Sikuang Li, Guanjun Wu, Chen Yang, Taoran Yi, Zanwei Zhou, Zhikuan Bao, Lingxi Xie, Wei Shen, Qi Tian">
+  <meta name="description" content="TIGON combines image fidelity and textual control for flexible text-image conditioned 3D generation.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://chensjtu.github.io/papers/tigon.html">
+  <link rel="alternate" hreflang="en" href="https://chensjtu.github.io/papers/tigon.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://chensjtu.github.io/papers/tigon_zh.html">
+  <link rel="alternate" hreflang="x-default" href="https://chensjtu.github.io/papers/tigon.html">
+  <link rel="stylesheet" href="../global.css">
+  <meta property="og:type" content="article"><meta property="og:title" content="Text-Image Conditioned 3D Generation"><meta property="og:description" content="TIGON combines visual exemplars and textual specifications for 3D generation."><meta property="og:url" content="https://chensjtu.github.io/papers/tigon.html"><meta property="og:image" content="https://chensjtu.github.io/images/tigon-teaser.png"><meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="Text-Image Conditioned 3D Generation">
+  <meta name="citation_author" content="Jiazhong Cen"><meta name="citation_author" content="Jiemin Fang"><meta name="citation_author" content="Sikuang Li"><meta name="citation_author" content="Guanjun Wu"><meta name="citation_author" content="Chen Yang"><meta name="citation_author" content="Taoran Yi"><meta name="citation_author" content="Zanwei Zhou"><meta name="citation_author" content="Zhikuan Bao"><meta name="citation_author" content="Lingxi Xie"><meta name="citation_author" content="Wei Shen"><meta name="citation_author" content="Qi Tian">
+  <meta name="citation_publication_date" content="2026/03/22"><meta name="citation_conference_title" content="IEEE/CVF Conference on Computer Vision and Pattern Recognition"><meta name="citation_arxiv_id" content="2603.21295"><meta name="citation_pdf_url" content="https://arxiv.org/pdf/2603.21295">
+  <meta name="citation_doi" content="10.48550/arXiv.2603.21295">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/tigon.html#article","url":"https://chensjtu.github.io/papers/tigon.html","headline":"Text-Image Conditioned 3D Generation","alternativeHeadline":"TIGON: Text-Image Conditioned 3D Generation","description":"TIGON combines image fidelity and textual control for flexible text-image conditioned 3D generation.","datePublished":"2026-03-22","inLanguage":"en","isAccessibleForFree":true,"image":"https://chensjtu.github.io/images/tigon-teaser.png","identifier":["arXiv:2603.21295","https://doi.org/10.48550/arXiv.2603.21295"],"sameAs":["https://arxiv.org/abs/2603.21295","https://jumpat.github.io/tigon-page/","https://github.com/Jumpat/TIGON","https://openaccess.thecvf.com/content/CVPR2026/html/Cen_Text-Image_Conditioned_3D_Generation_CVPR_2026_paper.html"],"keywords":["text-image conditioned 3D generation","multimodal 3D generation","vision-language guidance","3D asset generation"],"author":[{"@type":"Person","name":"Jiazhong Cen"},{"@type":"Person","name":"Jiemin Fang"},{"@type":"Person","name":"Sikuang Li"},{"@type":"Person","name":"Guanjun Wu"},{"@type":"Person","@id":"https://chensjtu.github.io/#person","name":"Chen Yang","url":"https://chensjtu.github.io/","identifier":"https://orcid.org/0000-0003-4496-7849","sameAs":"https://orcid.org/0000-0003-4496-7849"},{"@type":"Person","name":"Taoran Yi"},{"@type":"Person","name":"Zanwei Zhou"},{"@type":"Person","name":"Zhikuan Bao"},{"@type":"Person","name":"Lingxi Xie"},{"@type":"Person","name":"Wei Shen"},{"@type":"Person","name":"Qi Tian"}]
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/tigon.html#article","identifier":["https://doi.org/10.48550/arXiv.2603.21295","OpenAlex:W7140208534","SemanticScholar:341ffe36febe6bb95c2f4ae957c42b14fe212e03"],"sameAs":["https://openalex.org/W7140208534","https://www.semanticscholar.org/paper/341ffe36febe6bb95c2f4ae957c42b14fe212e03"]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","@id":"https://chensjtu.github.io/#person","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0000-0003-4496-7849","url":"https://orcid.org/0000-0003-4496-7849"},"sameAs":"https://orcid.org/0000-0003-4496-7849"}
+  </script>
+</head>
+<body class="paper-page">
+  <main class="paper-page-shell">
+    <nav class="paper-page-nav" aria-label="Paper navigation"><a href="../index.html">← Chen Yang</a><span><strong>English</strong> &nbsp;/&nbsp; <a href="tigon_zh.html" lang="zh-CN">中文</a></span></nav>
+    <article>
+      <header class="paper-page-header">
+        <p class="paper-kicker">TIGON · CVPR 2026</p>
+        <h1>Text-Image Conditioned 3D Generation</h1>
+        <p class="paper-authors">Jiazhong Cen, Jiemin Fang, Sikuang Li, Guanjun Wu, <strong><a href="../index.html">Chen Yang</a></strong>, Taoran Yi, Zanwei Zhou, Zhikuan Bao, Lingxi Xie, Wei Shen, Qi Tian</p>
+        <p class="paper-venue"><strong>CVPR</strong>, 2026</p>
+        <div class="paper-resource-links" aria-label="Paper resources"><a href="https://jumpat.github.io/tigon-page/">Project Page</a><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Cen_Text-Image_Conditioned_3D_Generation_CVPR_2026_paper.html">CVF</a><a href="https://arxiv.org/abs/2603.21295">arXiv</a><a href="https://arxiv.org/pdf/2603.21295">PDF</a><a href="https://github.com/Jumpat/TIGON">Code</a><a href="https://huggingface.co/collections/jiazhongc/tigon-6913e091c20895d0655238cb">Models</a><a href="https://openalex.org/W7140208534">OpenAlex</a></div>
+        <ul class="paper-tags" aria-label="Research keywords"><li>Text-Image Conditioned 3D</li><li>Multimodal Generation</li><li>Vision-Language Guidance</li></ul>
+      </header>
+      <figure class="paper-hero"><img src="../images/tigon-teaser.png" alt="TIGON text-image conditioned 3D generation teaser"></figure>
+      <section class="paper-section" aria-labelledby="tigon-tldr"><h2 id="tigon-tldr">TL;DR</h2><p class="paper-summary">TIGON lets a user specify both a visual exemplar and a textual instruction, combining pixel-level appearance cues with semantic control to generate more faithful and flexible 3D assets.</p></section>
+      <section class="paper-section" aria-labelledby="tigon-abstract"><h2 id="tigon-abstract">Abstract</h2><p>High-quality 3D generators commonly rely on a single conditioning modality. Image-conditioned systems preserve visual detail but can inherit viewpoint bias and ambiguity, while text-conditioned systems offer broad semantic control without enough low-level appearance information. This work formalizes text-image conditioned 3D generation, in which a visual exemplar and a textual specification jointly define the desired asset. A diagnostic study finds that even late fusion of independently conditioned predictions improves upon either modality alone, demonstrating strong cross-modal complementarity. Building on this observation, TIGON uses separate image- and text-conditioned backbones with lightweight cross-modal fusion. Experiments show that joint conditioning consistently outperforms single-modality alternatives, providing a simple baseline and a practical direction for flexible, faithful 3D content generation.</p></section>
+      <section class="paper-section" aria-labelledby="tigon-contributions"><h2 id="tigon-contributions">Key contributions</h2><ul class="paper-contributions"><li>Formalizes text-image conditioned 3D generation as a multimodal generation task.</li><li>Demonstrates the complementary value of textual semantics and image-aligned visual detail.</li><li>Introduces a minimalist dual-branch architecture with lightweight cross-modal fusion.</li></ul></section>
+      <section class="paper-section" aria-labelledby="tigon-citation"><h2 id="tigon-citation">Citation</h2><pre class="paper-citation">@inproceedings{cen2026textimage,
+  title={Text-Image Conditioned 3D Generation},
+  author={Cen, Jiazhong and Fang, Jiemin and Li, Sikuang and Wu, Guanjun and Yang, Chen and Yi, Taoran and Zhou, Zanwei and Bao, Zhikuan and Xie, Lingxi and Shen, Wei and Tian, Qi},
+  booktitle={CVPR},
+  year={2026},
+  doi={10.48550/arXiv.2603.21295}
+}</pre></section>
+    </article>
+    <footer class="paper-page-footer"><a href="../index.html#publications">← Back to Chen Yang's publications</a></footer>
+  </main>
+</body>
+</html>

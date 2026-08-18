@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIGON：图文条件三维生成 | 杨辰</title>
+  <meta name="author" content="Jiazhong Cen, Jiemin Fang, Sikuang Li, Guanjun Wu, Chen Yang, Taoran Yi, Zanwei Zhou, Zhikuan Bao, Lingxi Xie, Wei Shen, Qi Tian"><meta name="description" content="TIGON 结合图像的视觉细节和文本的语义控制，实现灵活、忠实的图文条件三维生成。"><meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://chensjtu.github.io/papers/tigon_zh.html"><link rel="alternate" hreflang="en" href="https://chensjtu.github.io/papers/tigon.html"><link rel="alternate" hreflang="zh-CN" href="https://chensjtu.github.io/papers/tigon_zh.html"><link rel="alternate" hreflang="x-default" href="https://chensjtu.github.io/papers/tigon.html"><link rel="stylesheet" href="../global.css">
+  <meta property="og:type" content="article"><meta property="og:title" content="Text-Image Conditioned 3D Generation"><meta property="og:description" content="结合视觉样例和文本描述进行三维生成。"><meta property="og:url" content="https://chensjtu.github.io/papers/tigon_zh.html"><meta property="og:image" content="https://chensjtu.github.io/images/tigon-teaser.png"><meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="Text-Image Conditioned 3D Generation"><meta name="citation_author" content="Jiazhong Cen"><meta name="citation_author" content="Jiemin Fang"><meta name="citation_author" content="Sikuang Li"><meta name="citation_author" content="Guanjun Wu"><meta name="citation_author" content="Chen Yang"><meta name="citation_author" content="Taoran Yi"><meta name="citation_author" content="Zanwei Zhou"><meta name="citation_author" content="Zhikuan Bao"><meta name="citation_author" content="Lingxi Xie"><meta name="citation_author" content="Wei Shen"><meta name="citation_author" content="Qi Tian"><meta name="citation_publication_date" content="2026/03/22"><meta name="citation_conference_title" content="IEEE/CVF Conference on Computer Vision and Pattern Recognition"><meta name="citation_arxiv_id" content="2603.21295"><meta name="citation_pdf_url" content="https://arxiv.org/pdf/2603.21295">
+  <meta name="citation_doi" content="10.48550/arXiv.2603.21295">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/tigon.html#article","url":"https://chensjtu.github.io/papers/tigon_zh.html","headline":"Text-Image Conditioned 3D Generation","alternativeHeadline":"TIGON: Text-Image Conditioned 3D Generation","description":"TIGON 结合图像的视觉细节和文本的语义控制，实现灵活、忠实的图文条件三维生成。","datePublished":"2026-03-22","inLanguage":"en","isAccessibleForFree":true,"image":"https://chensjtu.github.io/images/tigon-teaser.png","identifier":["arXiv:2603.21295","https://doi.org/10.48550/arXiv.2603.21295"],"sameAs":["https://arxiv.org/abs/2603.21295","https://jumpat.github.io/tigon-page/","https://github.com/Jumpat/TIGON","https://openaccess.thecvf.com/content/CVPR2026/html/Cen_Text-Image_Conditioned_3D_Generation_CVPR_2026_paper.html"],"keywords":["图文条件三维生成","多模态三维生成","视觉语言引导"],"author":[{"@type":"Person","name":"Jiazhong Cen"},{"@type":"Person","name":"Jiemin Fang"},{"@type":"Person","name":"Sikuang Li"},{"@type":"Person","name":"Guanjun Wu"},{"@type":"Person","@id":"https://chensjtu.github.io/#person","name":"Chen Yang","url":"https://chensjtu.github.io/","identifier":"https://orcid.org/0000-0003-4496-7849","sameAs":"https://orcid.org/0000-0003-4496-7849"},{"@type":"Person","name":"Taoran Yi"},{"@type":"Person","name":"Zanwei Zhou"},{"@type":"Person","name":"Zhikuan Bao"},{"@type":"Person","name":"Lingxi Xie"},{"@type":"Person","name":"Wei Shen"},{"@type":"Person","name":"Qi Tian"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","@id":"https://chensjtu.github.io/papers/tigon_zh.html#page","url":"https://chensjtu.github.io/papers/tigon_zh.html","inLanguage":"zh-CN","mainEntity":{"@id":"https://chensjtu.github.io/papers/tigon.html#article"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","@id":"https://chensjtu.github.io/#person","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0000-0003-4496-7849","url":"https://orcid.org/0000-0003-4496-7849"},"sameAs":"https://orcid.org/0000-0003-4496-7849"}
+  </script>
+</head>
+<body class="paper-page">
+  <main class="paper-page-shell">
+    <nav class="paper-page-nav" aria-label="论文导航"><a href="../index_zh.html">← 杨辰</a><span><a href="tigon.html" lang="en">English</a> &nbsp;/&nbsp; <strong>中文</strong></span></nav>
+    <article>
+      <header class="paper-page-header"><p class="paper-kicker">TIGON · CVPR 2026</p><h1>Text-Image Conditioned 3D Generation</h1><p class="paper-authors">Jiazhong Cen, Jiemin Fang, Sikuang Li, Guanjun Wu, <strong><a href="../index_zh.html">Chen Yang</a></strong>, Taoran Yi, Zanwei Zhou, Zhikuan Bao, Lingxi Xie, Wei Shen, Qi Tian</p><p class="paper-venue"><strong>CVPR</strong>，2026</p><div class="paper-resource-links" aria-label="论文资源"><a href="https://jumpat.github.io/tigon-page/">项目主页</a><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Cen_Text-Image_Conditioned_3D_Generation_CVPR_2026_paper.html">CVF</a><a href="https://arxiv.org/abs/2603.21295">arXiv</a><a href="https://arxiv.org/pdf/2603.21295">PDF</a><a href="https://github.com/Jumpat/TIGON">代码</a><a href="https://huggingface.co/collections/jiazhongc/tigon-6913e091c20895d0655238cb">模型权重</a><a href="https://openalex.org/W7140208534">OpenAlex</a></div><ul class="paper-tags" aria-label="研究关键词"><li>图文条件三维生成</li><li>多模态生成</li><li>视觉语言引导</li></ul></header>
+      <figure class="paper-hero"><img src="../images/tigon-teaser.png" alt="TIGON 图文条件三维生成展示图"></figure>
+      <section class="paper-section" aria-labelledby="tigon-zh-tldr"><h2 id="tigon-zh-tldr">一句话概述</h2><p class="paper-summary">TIGON 允许用户同时给出视觉样例和文本指令，将像素级外观线索与语义控制结合起来，生成更忠实、更灵活的三维资产。</p></section>
+      <section class="paper-section" aria-labelledby="tigon-zh-abstract"><h2 id="tigon-zh-abstract">摘要</h2><p>高质量三维生成模型通常只依赖一种条件模态：图像条件模型能够保留丰富视觉细节，但容易受到输入视角和歧义影响；文本条件模型具有更强的语义控制能力，却缺少底层外观信息。本文将图文条件三维生成形式化为一个新任务，由视觉样例和文本描述共同定义目标资产。诊断实验发现，即使只对两种单模态预测进行简单后期融合，也能优于任一单独模态，说明二者具有显著互补性。基于这一观察，TIGON 采用相互独立的图像条件与文本条件主干，并通过轻量级跨模态融合进行联合生成。实验表明，图文联合条件能持续提升单模态方法，为灵活且忠实的三维内容生成提供了简洁基线和新的研究方向。</p></section>
+      <section class="paper-section" aria-labelledby="tigon-zh-contributions"><h2 id="tigon-zh-contributions">主要贡献</h2><ul class="paper-contributions"><li>将图文条件三维生成系统化定义为多模态生成任务。</li><li>验证文本语义与图像视觉细节在三维生成中的互补价值。</li><li>提出采用轻量级跨模态融合的双分支基础架构。</li></ul></section>
+      <section class="paper-section" aria-labelledby="tigon-zh-citation"><h2 id="tigon-zh-citation">引用</h2><pre class="paper-citation">@inproceedings{cen2026textimage,
+  title={Text-Image Conditioned 3D Generation},
+  author={Cen, Jiazhong and Fang, Jiemin and Li, Sikuang and Wu, Guanjun and Yang, Chen and Yi, Taoran and Zhou, Zanwei and Bao, Zhikuan and Xie, Lingxi and Shen, Wei and Tian, Qi},
+  booktitle={CVPR},
+  year={2026},
+  doi={10.48550/arXiv.2603.21295}
+}</pre></section>
+    </article>
+    <footer class="paper-page-footer"><a href="../index_zh.html#publications">← 返回杨辰的论文列表</a></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,359 @@
+{
+  "schema": "academic-publications",
+  "version": "1.0",
+  "last_updated": "2026-08-18",
+  "author": {
+    "name": "Chen Yang",
+    "name_zh": "杨辰",
+    "url": "https://chensjtu.github.io/",
+    "profile": "https://chensjtu.github.io/profile.json",
+    "orcid": "0000-0003-4496-7849",
+    "publication_count": 24,
+    "publication_count_display": "20+",
+    "google_scholar_citations_minimum": 1500,
+    "metrics_as_of": "2026-08-18",
+    "roles": [
+      "World Models Researcher and Engineer",
+      "3D Generation Researcher and Engineer",
+      "Principal Engineer"
+    ],
+    "expertise": [
+      "foundation world models",
+      "3D generation",
+      "infinite 3D world generation",
+      "spatial intelligence",
+      "embodied AI",
+      "3D reconstruction",
+      "Gaussian splatting"
+    ],
+    "research_principles": [
+      "open-source implementations",
+      "reproducible evaluation",
+      "fair comparison",
+      "research-to-product engineering"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=StdXTR8AAAAJ&hl",
+      "https://dblp.org/pid/01/2478-23",
+      "https://github.com/chensjtu",
+      "https://orcid.org/0000-0003-4496-7849"
+    ]
+  },
+  "publications": [
+    {
+      "id": "sculpt",
+      "title": "SCULPT: Subtractive Composition for 3D Part Generation",
+      "authors": ["Sikuang Li", "Chen Yang", "Jiemin Fang", "Jiazhong Cen", "Yuhe Wei", "Jichen Pang", "Wei Shen", "Qi Tian"],
+      "year": 2026,
+      "venue": "arXiv",
+      "type": "preprint",
+      "doi": "10.48550/arXiv.2608.13541",
+      "urls": {
+        "details": "https://chensjtu.github.io/papers/sculpt.html",
+        "project": "https://sculpt-part.github.io/",
+        "arxiv": "https://arxiv.org/abs/2608.13541",
+        "pdf": "https://arxiv.org/pdf/2608.13541",
+        "code": "https://github.com/sculpt-part/SCULPT",
+        "openalex": "https://openalex.org/W7203455405"
+      },
+      "keywords": ["part-aware 3D generation", "subtractive composition", "structured 3D latents"]
+    },
+    {
+      "id": "tigon",
+      "title": "Text-Image Conditioned 3D Generation",
+      "display_title": "TIGON: Text-Image Conditioned 3D Generation",
+      "authors": ["Jiazhong Cen", "Jiemin Fang", "Sikuang Li", "Guanjun Wu", "Chen Yang", "Taoran Yi", "Zanwei Zhou", "Zhikuan Bao", "Lingxi Xie", "Wei Shen", "Qi Tian"],
+      "year": 2026,
+      "venue": "CVPR",
+      "type": "conference-paper",
+      "doi": "10.48550/arXiv.2603.21295",
+      "urls": {
+        "details": "https://chensjtu.github.io/papers/tigon.html",
+        "project": "https://jumpat.github.io/tigon-page/",
+        "arxiv": "https://arxiv.org/abs/2603.21295",
+        "pdf": "https://arxiv.org/pdf/2603.21295",
+        "code": "https://github.com/Jumpat/TIGON",
+        "models": "https://huggingface.co/collections/jiazhongc/tigon-6913e091c20895d0655238cb",
+        "venue": "https://openaccess.thecvf.com/content/CVPR2026/html/Cen_Text-Image_Conditioned_3D_Generation_CVPR_2026_paper.html",
+        "openalex": "https://openalex.org/W7140208534",
+        "semantic_scholar": "https://www.semanticscholar.org/paper/341ffe36febe6bb95c2f4ae957c42b14fe212e03"
+      },
+      "keywords": ["text-image conditioned 3D", "multimodal generation", "vision-language guidance"]
+    },
+    {
+      "id": "unilat3d",
+      "title": "UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation",
+      "authors": ["Guanjun Wu", "Jiemin Fang", "Chen Yang", "Sikuang Li", "Taoran Yi", "Jia Lu", "Zanwei Zhou", "Jiazhong Cen", "Lingxi Xie", "Xiaopeng Zhang", "Wei Wei", "Wenyu Liu", "Xinggang Wang", "Qi Tian"],
+      "year": 2026,
+      "venue": "Findings of CVPR",
+      "type": "conference-paper",
+      "doi": "10.48550/arXiv.2509.25079",
+      "urls": {
+        "details": "https://chensjtu.github.io/papers/unilat3d.html",
+        "project": "https://unilat3d.github.io/",
+        "arxiv": "https://arxiv.org/abs/2509.25079",
+        "pdf": "https://arxiv.org/pdf/2509.25079",
+        "code": "https://github.com/UniLat3D/UniLat3D",
+        "demo": "https://huggingface.co/spaces/UniLat3D/UniLat3D",
+        "openalex": "https://openalex.org/W4415337644"
+      },
+      "keywords": ["3D generation", "geometry-appearance latents", "single-stage generation"]
+    },
+    {
+      "id": "snap-snap",
+      "title": "Snap-Snap: Taking Two Images to Reconstruct 3D Human Gaussians in Milliseconds",
+      "authors": ["Jia Lu", "Taoran Yi", "Jiemin Fang", "Chen Yang", "Chuiyun Wu", "Wei Shen", "Wenyu Liu", "Qi Tian", "Xinggang Wang"],
+      "year": 2026,
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+      "type": "journal-article",
+      "urls": {
+        "project": "https://hustvl.github.io/Snap-Snap/"
+      }
+    },
+    {
+      "id": "worldgrow",
+      "title": "WorldGrow: Generating Infinite 3D World",
+      "authors": ["Sikuang Li", "Chen Yang", "Jiemin Fang", "Taoran Yi", "Jia Lu", "Jiazhong Cen", "Lingxi Xie", "Wei Shen", "Qi Tian"],
+      "year": 2026,
+      "venue": "AAAI",
+      "type": "conference-paper",
+      "doi": "10.1609/aaai.v40i8.37571",
+      "honors": ["Oral"],
+      "urls": {
+        "details": "https://chensjtu.github.io/papers/worldgrow.html",
+        "project": "https://world-grow.github.io/",
+        "arxiv": "https://arxiv.org/abs/2510.21682",
+        "pdf": "https://arxiv.org/pdf/2510.21682",
+        "code": "https://github.com/world-grow/WorldGrow",
+        "video": "https://www.youtube.com/watch?v=blVXMwGHQO4",
+        "publisher": "https://ojs.aaai.org/index.php/AAAI/article/view/37571",
+        "openalex": "https://openalex.org/W7138420520"
+      },
+      "keywords": ["world models", "infinite 3D generation", "structured 3D latents"]
+    },
+    {
+      "id": "dereflection-any-image",
+      "title": "Dereflection Any Image with Diffusion Priors and Diversified Data",
+      "authors": ["Jichen Hu", "Chen Yang", "Zanwei Zhou", "Jiemin Fang", "Qi Tian", "Wei Shen"],
+      "year": 2026,
+      "venue": "AAAI",
+      "type": "conference-paper",
+      "urls": {
+        "project": "https://abuuu122.github.io/DAI.github.io/"
+      }
+    },
+    {
+      "id": "few-step-diffusion-3d",
+      "title": "Few-step Diffusion for 3D Generation by Learning Marginal Probability Path",
+      "authors": ["Zanwei Zhou", "Taoran Yi", "Jiemin Fang", "Chen Yang", "Lingxi Xie", "Xinggang Wang", "Wei Shen", "Qi Tian"],
+      "year": 2026,
+      "venue": "AAAI",
+      "type": "conference-paper",
+      "urls": {
+        "project": "https://zanue.github.io/mdt-dist/"
+      }
+    },
+    {
+      "id": "segment-any-3d-gaussians",
+      "title": "Segment Any 3D Gaussians",
+      "authors": ["Jiazhong Cen", "Jiemin Fang", "Chen Yang", "Lingxi Xie", "Xiaopeng Zhang", "Wei Shen", "Qi Tian"],
+      "year": 2025,
+      "venue": "AAAI",
+      "type": "conference-paper",
+      "urls": {
+        "arxiv": "https://arxiv.org/abs/2412.08031"
+      }
+    },
+    {
+      "id": "endodav",
+      "title": "EndoDAV: Depth Any Video in Endoscopy with Spatiotemporal Accuracy",
+      "authors": ["Zanwei Zhou", "Chen Yang", "Piao Yang", "Xiaokang Yang", "Wei Shen"],
+      "year": 2025,
+      "venue": "MICCAI",
+      "type": "conference-paper",
+      "urls": {
+        "arxiv": "https://arxiv.org/abs/2412.08032"
+      }
+    },
+    {
+      "id": "liftimage3d",
+      "title": "LiftImage3D: Lifting any single image to 3D Gaussians with video generation priors",
+      "authors": ["Yabo Chen", "Chen Yang", "Jiemin Fang", "Xiaopeng Zhang", "Lingxi Xie", "Wei Shen", "Wenrui Dai", "Hongkai Xiong", "Qi Tian"],
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "type": "preprint",
+      "urls": {
+        "arxiv": "https://arxiv.org/abs/2412.09597"
+      }
+    },
+    {
+      "id": "gaussianobject",
+      "title": "GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting",
+      "authors": ["Chen Yang", "Sikuang Li", "Jiemin Fang", "Ruofan Liang", "Lingxi Xie", "Xiaopeng Zhang", "Wei Shen", "Qi Tian"],
+      "year": 2024,
+      "venue": "ACM Transactions on Graphics (SIGGRAPH Asia)",
+      "type": "journal-article",
+      "doi": "10.1145/3687759",
+      "urls": {
+        "details": "https://chensjtu.github.io/papers/gaussianobject.html",
+        "project": "https://gaussianobject.github.io/",
+        "arxiv": "https://arxiv.org/abs/2402.10259",
+        "pdf": "https://arxiv.org/pdf/2402.10259",
+        "code": "https://github.com/GaussianObject/GaussianObject",
+        "publisher": "https://doi.org/10.1145/3687759",
+        "openalex": "https://openalex.org/W4404525549",
+        "dblp": "https://dblp.org/rec/journals/tog/YangLFLXZST24"
+      },
+      "keywords": ["sparse-view reconstruction", "Gaussian splatting", "diffusion repair"]
+    },
+    {
+      "id": "endogslam",
+      "title": "EndoGSLAM: Real-time Dense Reconstruction and Tracking in Endoscopic Surgeries using Gaussian Splatting",
+      "authors": ["Chen Yang", "Kailing Wang", "Yuehao Wang", "Sikuang Li", "Yan Wang", "Qi Dou", "Xiaokang Yang", "Wei Shen"],
+      "year": 2024,
+      "venue": "MICCAI",
+      "type": "conference-paper",
+      "urls": {
+        "project": "https://loping151.github.io/endogslam/",
+        "arxiv": "https://arxiv.org/abs/2403.15124"
+      }
+    },
+    {
+      "id": "orthogonal-neural-plane",
+      "title": "Efficient Deformable Tissue Reconstruction via Orthogonal Neural Plane",
+      "authors": ["Chen Yang", "Kailing Wang", "Yuehao Wang", "Qi Dou", "Xiaokang Yang", "Wei Shen"],
+      "year": 2024,
+      "venue": "IEEE Transactions on Medical Imaging (TMI)",
+      "type": "journal-article",
+      "urls": {
+        "venue": "https://ieeexplore.ieee.org/document/10494102"
+      }
+    },
+    {
+      "id": "surgical-simulation-monocular",
+      "title": "Realistic surgical simulation from monocular videos",
+      "authors": ["Kailing Wang", "Chen Yang", "Keyang Zhao", "Xiaokang Yang", "Wei Shen"],
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "type": "preprint",
+      "urls": {
+        "arxiv": "https://arxiv.org/abs/2403.17744"
+      }
+    },
+    {
+      "id": "sg-gs",
+      "title": "SG-GS: Photo-realistic Animatable Human Avatars with Semantically-Guided Gaussian Splatting",
+      "authors": ["Chen Yang", "Haoyu Zhao", "Hao Wang", "Xingyue Zhao", "Wei Shen"],
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "type": "preprint",
+      "urls": {
+        "arxiv": "https://arxiv.org/abs/2404.11368"
+      }
+    },
+    {
+      "id": "chase",
+      "title": "CHASE: 3D-Consistent Human Avatars with Sparse Inputs via Gaussian Splatting and Contrastive Learning",
+      "authors": ["Chen Yang", "Haoyu Zhao", "Hao Wang", "Wei Shen"],
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "type": "preprint",
+      "urls": {
+        "arxiv": "https://arxiv.org/abs/2404.10642"
+      }
+    },
+    {
+      "id": "sa3d",
+      "title": "Segment Anything in 3D with NeRFs",
+      "authors": ["Jiazhong Cen", "Zanwei Zhou", "Jiemin Fang", "Chen Yang", "Wei Shen", "Lingxi Xie", "Dongsheng Jiang", "Xiaopeng Zhang", "Qi Tian"],
+      "year": 2023,
+      "venue": "NeurIPS",
+      "type": "conference-paper",
+      "urls": {
+        "project": "https://jumpat.github.io/SA3D/",
+        "arxiv": "https://arxiv.org/abs/2304.12308",
+        "code": "https://github.com/Jumpat/SegmentAnythingin3D"
+      }
+    },
+    {
+      "id": "lerplane",
+      "title": "Neural Lerplane Representations for Fast 4D Reconstruction of Deformable Tissues",
+      "authors": ["Chen Yang", "Kailing Wang", "Yuehao Wang", "Xiaokang Yang", "Wei Shen"],
+      "year": 2023,
+      "venue": "MICCAI",
+      "type": "conference-paper",
+      "honors": ["Oral", "Young Scientist Award"],
+      "urls": {
+        "venue": "https://link.springer.com/chapter/10.1007/978-3-031-43996-4_5",
+        "code": "https://github.com/Loping151/ForPlane"
+      }
+    },
+    {
+      "id": "nerfvs",
+      "title": "NeRFVS: Neural Radiance Fields for Free View Synthesis via Geometry Scaffolds",
+      "authors": ["Chen Yang", "Peihao Li", "Zanwei Zhou", "Shanxin Yuan", "Bingbing Liu", "Xiaokang Yang", "Weichao Qiu", "Wei Shen"],
+      "year": 2023,
+      "venue": "CVPR",
+      "type": "conference-paper",
+      "urls": {
+        "pdf": "https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_NeRFVS_Neural_Radiance_Fields_for_Free_View_Synthesis_via_Geometry_CVPR_2023_paper.pdf",
+        "arxiv": "https://arxiv.org/abs/2304.06287"
+      }
+    },
+    {
+      "id": "nerf-ms",
+      "title": "NeRF-MS: Neural Radiance Fields with Multi-Sequence",
+      "authors": ["Peihao Li", "Shaohui Wang", "Chen Yang", "Bingbing Liu", "Weichao Qiu", "Haoqian Wang"],
+      "year": 2023,
+      "venue": "ICCV",
+      "type": "conference-paper",
+      "urls": {
+        "pdf": "https://openaccess.thecvf.com/content/ICCV2023/papers/Li_NeRF-MS_Neural_Radiance_Fields_with_Multi-Sequence_ICCV_2023_paper.pdf"
+      }
+    },
+    {
+      "id": "poxture",
+      "title": "Poxture: Human Posture Imitation Using Neural Texture",
+      "authors": ["Chen Yang", "Shun-Yu Yao", "Zan-Wei Zhou", "Bin Ji", "Guang-Tao Zhai", "Wei Shen"],
+      "year": 2022,
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+      "type": "journal-article",
+      "urls": {
+        "venue": "https://ieeexplore.ieee.org/document/9764674"
+      }
+    },
+    {
+      "id": "k-variate-time-series",
+      "title": "A k-variate Time Series is Worth k Words: Evolution of the Vanilla Transformer Architecture for Long-term Multivariate Time Series Forecasting",
+      "authors": ["Zanwei Zhou", "Ruizhe Zhong", "Chen Yang", "Yan Wang", "Xiaokang Yang", "Wei Shen"],
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "type": "preprint",
+      "urls": {
+        "arxiv": "https://arxiv.org/abs/2209.09904"
+      }
+    },
+    {
+      "id": "spidr",
+      "title": "SPIDR: SDF-based Neural Point Fields for Illumination and Deformation",
+      "authors": ["Ruofan Liang", "Jiahao Zhang", "Haoda Li", "Chen Yang", "Yushi Guan", "Nandita Vijaykumar"],
+      "year": 2022,
+      "venue": "CVPR Workshop",
+      "type": "conference-paper",
+      "urls": {
+        "arxiv": "https://arxiv.org/abs/2210.08398"
+      }
+    },
+    {
+      "id": "hpof",
+      "title": "HPOF: 3D Human Pose Recovery from Monocular Video with Optical Flow",
+      "authors": ["Bin Ji", "Chen Yang", "Shunyu Yao", "Ye Pan"],
+      "year": 2021,
+      "venue": "ICMR",
+      "type": "conference-paper",
+      "urls": {
+        "venue": "https://dl.acm.org/doi/10.1145/3460426.3463663"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>UniLat3D：几何与外观统一潜变量的单阶段三维生成 | 杨辰</title><meta name="author" content="Guanjun Wu, Jiemin Fang, Chen Yang, Sikuang Li, Taoran Yi, Jia Lu, Zanwei Zhou, Jiazhong Cen, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Xinggang Wang, Qi Tian"><meta name="description" content="UniLat3D 在紧凑潜空间中统一几何与外观，实现直接的单阶段三维资产生成。"><meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://chensjtu.github.io/papers/unilat3d_zh.html"><link rel="alternate" hreflang="en" href="https://chensjtu.github.io/papers/unilat3d.html"><link rel="alternate" hreflang="zh-CN" href="https://chensjtu.github.io/papers/unilat3d_zh.html"><link rel="alternate" hreflang="x-default" href="https://chensjtu.github.io/papers/unilat3d.html"><link rel="stylesheet" href="../global.css">
+  <meta property="og:type" content="article"><meta property="og:title" content="UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation"><meta property="og:description" content="用于高效单阶段三维生成的几何外观统一潜变量。"><meta property="og:url" content="https://chensjtu.github.io/papers/unilat3d_zh.html"><meta property="og:image" content="https://chensjtu.github.io/images/unilat3d-teaser.jpg"><meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation"><meta name="citation_author" content="Guanjun Wu"><meta name="citation_author" content="Jiemin Fang"><meta name="citation_author" content="Chen Yang"><meta name="citation_author" content="Sikuang Li"><meta name="citation_author" content="Taoran Yi"><meta name="citation_author" content="Jia Lu"><meta name="citation_author" content="Zanwei Zhou"><meta name="citation_author" content="Jiazhong Cen"><meta name="citation_author" content="Lingxi Xie"><meta name="citation_author" content="Xiaopeng Zhang"><meta name="citation_author" content="Wei Wei"><meta name="citation_author" content="Wenyu Liu"><meta name="citation_author" content="Xinggang Wang"><meta name="citation_author" content="Qi Tian"><meta name="citation_publication_date" content="2026"><meta name="citation_conference_title" content="Findings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition"><meta name="citation_arxiv_id" content="2509.25079"><meta name="citation_pdf_url" content="https://arxiv.org/pdf/2509.25079">
+  <meta name="citation_doi" content="10.48550/arXiv.2509.25079">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/unilat3d.html#article","url":"https://chensjtu.github.io/papers/unilat3d_zh.html","headline":"UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation","description":"UniLat3D 在紧凑潜空间中统一几何与外观，实现直接的单阶段三维资产生成。","datePublished":"2025-09-29","inLanguage":"en","isAccessibleForFree":true,"image":"https://chensjtu.github.io/images/unilat3d-teaser.jpg","identifier":["arXiv:2509.25079","https://doi.org/10.48550/arXiv.2509.25079"],"sameAs":["https://arxiv.org/abs/2509.25079","https://unilat3d.github.io/","https://github.com/UniLat3D/UniLat3D"],"keywords":["三维生成","几何外观统一潜变量","单阶段生成","流匹配"],"author":[{"@type":"Person","name":"Guanjun Wu"},{"@type":"Person","name":"Jiemin Fang"},{"@type":"Person","@id":"https://chensjtu.github.io/#person","name":"Chen Yang","url":"https://chensjtu.github.io/"},{"@type":"Person","name":"Sikuang Li"},{"@type":"Person","name":"Taoran Yi"},{"@type":"Person","name":"Jia Lu"},{"@type":"Person","name":"Zanwei Zhou"},{"@type":"Person","name":"Jiazhong Cen"},{"@type":"Person","name":"Lingxi Xie"},{"@type":"Person","name":"Xiaopeng Zhang"},{"@type":"Person","name":"Wei Wei"},{"@type":"Person","name":"Wenyu Liu"},{"@type":"Person","name":"Xinggang Wang"},{"@type":"Person","name":"Qi Tian"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","@id":"https://chensjtu.github.io/papers/unilat3d_zh.html#page","url":"https://chensjtu.github.io/papers/unilat3d_zh.html","inLanguage":"zh-CN","mainEntity":{"@id":"https://chensjtu.github.io/papers/unilat3d.html#article"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","@id":"https://chensjtu.github.io/#person","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0000-0003-4496-7849","url":"https://orcid.org/0000-0003-4496-7849"},"sameAs":"https://orcid.org/0000-0003-4496-7849"}
+  </script>
+</head>
+<body class="paper-page">
+  <main class="paper-page-shell">
+    <nav class="paper-page-nav" aria-label="论文导航"><a href="../index_zh.html">← 杨辰</a><span><a href="unilat3d.html" lang="en">English</a> &nbsp;/&nbsp; <strong>中文</strong></span></nav>
+    <article>
+      <header class="paper-page-header"><p class="paper-kicker">Findings of CVPR 2026</p><h1>UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation</h1><p class="paper-authors">Guanjun Wu*, Jiemin Fang*, <strong><a href="../index_zh.html">Chen Yang*</a></strong>, Sikuang Li, Taoran Yi, Jia Lu, Zanwei Zhou, Jiazhong Cen, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Xinggang Wang, Qi Tian</p><p class="paper-venue"><strong>Findings of CVPR</strong>，2026</p><div class="paper-resource-links" aria-label="论文资源"><a href="https://unilat3d.github.io/">项目主页</a><a href="https://arxiv.org/abs/2509.25079">arXiv</a><a href="https://arxiv.org/pdf/2509.25079">PDF</a><a href="https://github.com/UniLat3D/UniLat3D">代码</a><a href="https://huggingface.co/spaces/UniLat3D/UniLat3D">在线体验</a><a href="https://openalex.org/W4415337644">OpenAlex</a></div><ul class="paper-tags" aria-label="研究关键词"><li>三维生成</li><li>几何外观统一潜变量</li><li>单阶段生成</li></ul></header>
+      <figure class="paper-hero"><video autoplay loop muted controls playsinline preload="metadata" poster="../images/unilat3d-teaser.jpg"><source src="../videos/unilat3d.mp4" type="video/mp4">你的浏览器不支持视频播放。</video></figure>
+      <section class="paper-section" aria-labelledby="unilat-zh-tldr"><h2 id="unilat-zh-tldr">一句话概述</h2><p class="paper-summary">UniLat3D 将形状和外观共同编码到一个紧凑潜变量中，使单个流匹配模型能够在一个阶段内直接生成带纹理的三维资产。</p></section>
+      <section class="paper-section" aria-labelledby="unilat-zh-abstract"><h2 id="unilat-zh-abstract">摘要</h2><p>许多预训练三维生成模型采用先生成几何、再合成外观的两阶段流程，这种解耦设计容易造成几何与纹理错位，并带来额外计算开销。UniLat3D 提出统一框架，将几何和外观编码到同一潜空间中，实现直接的单阶段生成。其几何外观 Unified VAE 将高分辨率稀疏特征压缩为紧凑的稠密表示 UniLat，统一保存结构和视觉信息，并可解码为三维高斯、网格等多种格式。在此基础上，单个流匹配模型可将高斯噪声直接映射到 UniLat，省去冗余生成阶段。UniLat3D 仅使用公开数据训练，能在数秒内从单张图像生成高质量三维资产，并在外观保真度和几何质量上取得良好表现。</p></section>
+      <section class="paper-section" aria-labelledby="unilat-zh-contributions"><h2 id="unilat-zh-contributions">主要贡献</h2><ul class="paper-contributions"><li>在一个紧凑三维潜表示中统一建模几何和外观。</li><li>使用单个流匹配模型替代传统两阶段纹理资产生成流程。</li><li>支持将统一表示解码为三维高斯和网格等多种格式。</li></ul></section>
+      <section class="paper-section" aria-labelledby="unilat-zh-citation"><h2 id="unilat-zh-citation">引用</h2><pre class="paper-citation">@inproceedings{wu2026unilat3d,
+  title={UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation},
+  author={Wu, Guanjun and Fang, Jiemin and Yang, Chen and Li, Sikuang and Yi, Taoran and Lu, Jia and Zhou, Zanwei and Cen, Jiazhong and Xie, Lingxi and Zhang, Xiaopeng and Wei, Wei and Liu, Wenyu and Wang, Xinggang and Tian, Qi},
+  booktitle={Findings of CVPR},
+  year={2026},
+  doi={10.48550/arXiv.2509.25079}
+}</pre></section>
+    </article>
+    <footer class="paper-page-footer"><a href="../index_zh.html#publications">← 返回杨辰的论文列表</a></footer>
+  </main>
+</body>
+</html>

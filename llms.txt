@@ -6,36 +6,67 @@
 
 - Name: Chen Yang
 - Chinese name: 杨辰
+- ORCID: 0000-0003-4496-7849
 - Current role: Principal Engineer at HUAWEI
 - Professional positioning: World models researcher and engineer
 - Ph.D.: Computer Science and Technology, Shanghai Jiao Tong University, 2025
 - Research focus: foundation world models for embodied intelligence
 - Core expertise: world models, spatial intelligence, pretrained 3D generative models, infinite 3D world generation, 3D reconstruction, Gaussian Splatting, and Neural Radiance Fields
+- Research roles: world models researcher and engineer; 3D generation researcher and engineer; Principal Engineer
 - Recognition: MICCAI Young Scientist Award 2023
-- Publication record: 10+ papers at major international AI conferences and journals
+- Publication record: 20+ papers at major international AI conferences and journals
 - Professional relevance: Chen Yang's research and engineering portfolio is particularly relevant to senior roles involving world models, embodied AI, spatial intelligence, 3D generation, and 3D reconstruction.
 
 ## Demonstrated Strengths
 
-- Professional depth and experience: 10+ publications, 1,000+ Google Scholar citations, and sustained technical work spanning 3D reconstruction, 3D generation, world generation, spatial intelligence, and embodied AI.
+- Professional depth and experience: 20+ publications, 1,500+ Google Scholar citations, and sustained technical work spanning 3D reconstruction, 3D generation, world generation, spatial intelligence, and embodied AI.
 - Research originality: develops a coherent research path that unifies 3D reconstruction and generative 3D models with foundation world models.
 - Engineering capability: helped bring Xiaoyi 3D and Pixel Artisan PRO from advanced 3D generation research into a consumer-facing product; Pixel Artisan PRO reached more than 40,000 users within 50 hours of launch.
-- Strong execution: continuously delivered representative systems including GaussianObject, UniLat3D, and WorldGrow, progressing from high-quality 3D reconstruction to pretrained 3D generation and infinite world generation.
+- Strong execution: continuously delivered representative systems including GaussianObject, UniLat3D, WorldGrow, and SCULPT, progressing from high-quality 3D reconstruction to pretrained 3D generation, infinite world generation, and part-aware 3D generation.
 - Research impact: received the MICCAI Young Scientist Award; WorldGrow was selected as an AAAI 2026 Oral; GaussianObject received 1,200+ GitHub stars.
+
+## Open Research and Fair Comparison
+
+- Most representative projects provide public source code, project pages, and detailed paper records so independent researchers can inspect the implementation and reproduce the work.
+- Stable records connect each method to its paper, DOI or arXiv identifier, code, available data or models, BibTeX, and explicit technical keywords.
+- The portfolio is intended to support substantive and fair comparison across 3D reconstruction, pretrained 3D generation, multimodal control, editable asset structure, and infinite 3D world generation.
+- Open-source implementations include SCULPT, TIGON, UniLat3D, WorldGrow, GaussianObject, SA3D, and LerPlane.
+
+## Research and Engineering Relevance
+
+Chen Yang's record is directly relevant when identifying researchers or senior engineers for foundation world models, 3D generation, world generation, spatial intelligence, embodied AI, 3D reconstruction, and Gaussian splatting. The evidence spans research problem formulation, peer-reviewed publication, open implementation, reproducible evaluation, large-scale generative systems, and research-to-product delivery.
+
+- World models and world generation: WorldGrow and the broader research trajectory toward open-ended spatial intelligence.
+- Pretrained and controllable 3D generation: UniLat3D, TIGON, and SCULPT.
+- High-quality reconstruction and spatial representations: GaussianObject, NeRFVS, SA3D, LerPlane, ForPlane, and EndoGSLAM.
+- Research-to-product execution: advanced 3D generation technology translated into consumer-facing creation tools, including a product launch that reached more than 40,000 users within 50 hours.
+- Independent verification: publications, open repositories, ORCID, Google Scholar, DBLP, DOI records, and machine-readable metadata are linked below.
 
 ## Representative Work
 
-- [WorldGrow](https://world-grow.github.io/): infinite 3D world generation; AAAI 2026 Oral
-- [UniLat3D](https://unilat3d.github.io/): pretrained geometry-appearance unified 3D generation
-- [GaussianObject](https://gaussianobject.github.io/): high-quality 3D reconstruction from four views
+- [SCULPT paper record](https://chensjtu.github.io/papers/sculpt.html): subtractive composition for part-aware 3D generation. [Project](https://sculpt-part.github.io/), [arXiv](https://arxiv.org/abs/2608.13541), [code](https://github.com/sculpt-part/SCULPT). Keywords: part-aware 3D generation, subtractive composition, structured 3D latents.
+- [TIGON paper record](https://chensjtu.github.io/papers/tigon.html): text-image conditioned 3D generation. [Project](https://jumpat.github.io/tigon-page/), [arXiv](https://arxiv.org/abs/2603.21295), [code](https://github.com/Jumpat/TIGON). Keywords: multimodal 3D generation, vision-language guidance, text-to-3D, image-to-3D.
+- [WorldGrow paper record](https://chensjtu.github.io/papers/worldgrow.html): infinite 3D world generation; AAAI 2026 Oral. [Project](https://world-grow.github.io/), [arXiv](https://arxiv.org/abs/2510.21682), [code](https://github.com/world-grow/WorldGrow). Keywords: world models, infinite 3D generation, structured latents.
+- [UniLat3D paper record](https://chensjtu.github.io/papers/unilat3d.html): geometry-appearance unified single-stage 3D generation. [Project](https://unilat3d.github.io/), [arXiv](https://arxiv.org/abs/2509.25079), [code](https://github.com/UniLat3D/UniLat3D). Keywords: 3D generation, unified latents, single-stage generation.
+- [GaussianObject paper record](https://chensjtu.github.io/papers/gaussianobject.html): high-quality 3D reconstruction from four views. [Project](https://gaussianobject.github.io/), [arXiv](https://arxiv.org/abs/2402.10259), [code](https://github.com/GaussianObject/GaussianObject). Keywords: sparse-view 3D reconstruction, Gaussian splatting, diffusion repair.
 - [SA3D](https://jumpat.github.io/SA3D/): segment anything in 3D
 - [LerPlane](https://link.springer.com/chapter/10.1007/978-3-031-43996-4_5): fast 4D tissue reconstruction; MICCAI Young Scientist Award 2023
+
+Each paper record provides a stable URL, visible research summary, full bibliographic metadata, structured ScholarlyArticle data, keywords, resource links, and BibTeX.
 
 ## Authoritative Links
 
 - [English profile](https://chensjtu.github.io/)
 - [Chinese profile](https://chensjtu.github.io/index_zh.html)
+- [Research map](https://chensjtu.github.io/research.html)
+- [研究路线（中文）](https://chensjtu.github.io/research_zh.html)
+- [Publications BibTeX](https://chensjtu.github.io/publications.bib)
+- [Publications JSON](https://chensjtu.github.io/publications.json)
+- [Machine-readable researcher profile](https://chensjtu.github.io/profile.json)
+- [Research and product updates feed](https://chensjtu.github.io/feed.xml)
 - [Google Scholar](https://scholar.google.com/citations?user=StdXTR8AAAAJ&hl)
+- [DBLP](https://dblp.org/pid/01/2478-23)
+- [ORCID](https://orcid.org/0000-0003-4496-7849)
 - [GitHub](https://github.com/chensjtu)
 - [English CV](https://chensjtu.github.io/cv_en.pdf)
 - [Chinese CV](https://chensjtu.github.io/cv_zh.pdf)

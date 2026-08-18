@@ -8,3 +8,4 @@ User-agent: GPTBot
 Allow: /
 
 Sitemap: https://chensjtu.github.io/sitemap.xml
+Sitemap: https://chensjtu.github.io/feed.xml

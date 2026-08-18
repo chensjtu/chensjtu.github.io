@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://chensjtu.github.io/</id>
+  <title>Chen Yang — Research and Product Updates</title>
+  <updated>2026-08-18T00:00:00+08:00</updated>
+  <subtitle>Recent research, publications, and 3D intelligence product updates from Chen Yang.</subtitle>
+  <link rel="self" type="application/atom+xml" href="https://chensjtu.github.io/feed.xml" />
+  <link rel="alternate" type="text/html" href="https://chensjtu.github.io/" />
+  <author>
+    <name>Chen Yang</name>
+    <uri>https://orcid.org/0000-0003-4496-7849</uri>
+  </author>
+
+  <entry>
+    <id>https://chensjtu.github.io/papers/sculpt.html</id>
+    <title>SCULPT: Subtractive Composition for 3D Part Generation</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/papers/sculpt.html" />
+    <published>2026-08-13T00:00:00+08:00</published>
+    <updated>2026-08-13T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">SCULPT introduces subtractive composition in a structured 3D latent space to generate adaptive, editable, part-aware 3D assets with consistent shared boundaries.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/#news-pixel-artisan-pro-users</id>
+    <title>Pixel Artisan PRO surpasses 40,000 users</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/#news-pixel-artisan-pro-users" />
+    <published>2026-06-12T00:00:00+08:00</published>
+    <updated>2026-06-12T00:00:00+08:00</updated>
+    <category term="product" />
+    <summary type="text">Pixel Artisan PRO surpassed 40,000 users within 50 hours of launch, bringing 3D creation capabilities to a broad user community.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/#news-xiaoyi3d-pixel-artisan-pro</id>
+    <title>Xiaoyi 3D and Pixel Artisan PRO launch at HDC 2026</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/#news-xiaoyi3d-pixel-artisan-pro" />
+    <published>2026-06-12T00:00:00+08:00</published>
+    <updated>2026-06-12T00:00:00+08:00</updated>
+    <category term="product" />
+    <summary type="text">Xiaoyi 3D and Pixel Artisan PRO launched at HDC 2026 and received the HarmonyOS Innovative Premium App Award.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/#news-snap-snap</id>
+    <title>Snap-Snap accepted to TCSVT</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/#news-snap-snap" />
+    <published>2026-06-01T00:00:00+08:00</published>
+    <updated>2026-06-01T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">Snap-Snap was accepted to IEEE Transactions on Circuits and Systems for Video Technology.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/papers/tigon.html</id>
+    <title>TIGON: Text-Image Conditioned 3D Generation</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/papers/tigon.html" />
+    <published>2026-03-22T00:00:00+08:00</published>
+    <updated>2026-03-22T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">TIGON uses text-image conditions and multimodal guidance to improve controllable 3D generation while preserving geometric and appearance quality.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/#news-tigon-cvpr-2026</id>
+    <title>TIGON accepted to CVPR 2026</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/#news-tigon-cvpr-2026" />
+    <published>2026-03-22T00:00:00+08:00</published>
+    <updated>2026-03-22T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">TIGON was accepted to the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/#news-unilat3d-cvpr-findings-2026</id>
+    <title>UniLat3D accepted to Findings of CVPR 2026</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/#news-unilat3d-cvpr-findings-2026" />
+    <published>2026-03-01T00:00:00+08:00</published>
+    <updated>2026-03-01T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">UniLat3D was accepted to Findings of CVPR 2026 for its unified geometry-appearance latent representation and single-stage 3D generation framework.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/#news-worldgrow-gallery</id>
+    <title>WorldGrow Gallery goes online</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/#news-worldgrow-gallery" />
+    <published>2026-01-15T00:00:00+08:00</published>
+    <updated>2026-01-15T00:00:00+08:00</updated>
+    <category term="research" />
+    <summary type="text">The WorldGrow Gallery is now online, showcasing examples of coherent, infinitely extendable 3D world generation.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/#news-worldgrow-aaai-oral</id>
+    <title>WorldGrow accepted as an Oral presentation at AAAI 2026</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/#news-worldgrow-aaai-oral" />
+    <published>2025-11-15T00:00:00+08:00</published>
+    <updated>2025-11-15T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">WorldGrow was accepted as an Oral presentation at the AAAI Conference on Artificial Intelligence 2026.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/papers/worldgrow.html</id>
+    <title>WorldGrow: Generating Infinite 3D World</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/papers/worldgrow.html" />
+    <published>2025-10-24T00:00:00+08:00</published>
+    <updated>2025-10-24T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">WorldGrow extends coherent 3D scenes block by block using structured 3D priors, context-aware inpainting, and coarse-to-fine synthesis for open-ended world generation.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/papers/unilat3d.html</id>
+    <title>UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/papers/unilat3d.html" />
+    <published>2025-09-29T00:00:00+08:00</published>
+    <updated>2025-09-29T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">UniLat3D unifies geometry and appearance in a shared latent representation, enabling single-stage 3D generation with a simple and efficient generative process.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/#news-gaussianobject-stars</id>
+    <title>GaussianObject surpasses 1,200 GitHub stars</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/#news-gaussianobject-stars" />
+    <published>2025-07-15T00:00:00+08:00</published>
+    <updated>2025-07-15T00:00:00+08:00</updated>
+    <category term="research" />
+    <summary type="text">GaussianObject surpassed 1,200 GitHub stars, reflecting continued interest in sparse-view 3D object reconstruction with Gaussian splatting.</summary>
+  </entry>
+
+  <entry>
+    <id>https://chensjtu.github.io/papers/gaussianobject.html</id>
+    <title>GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting</title>
+    <link rel="alternate" type="text/html" href="https://chensjtu.github.io/papers/gaussianobject.html" />
+    <published>2024-02-15T00:00:00+08:00</published>
+    <updated>2024-02-15T00:00:00+08:00</updated>
+    <category term="research" />
+    <category term="paper" />
+    <summary type="text">GaussianObject reconstructs high-quality 3D objects from four views with Gaussian splatting, geometric initialization, floater elimination, and diffusion-based completion.</summary>
+  </entry>
+</feed>

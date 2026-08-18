@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SCULPT：用于三维部件生成的减法式组合 | 杨辰</title>
+  <meta name="author" content="Sikuang Li, Chen Yang, Jiemin Fang, Jiazhong Cen, Yuhe Wei, Jichen Pang, Wei Shen, Qi Tian">
+  <meta name="description" content="SCULPT 在结构化三维潜空间中通过减法式组合生成可编辑的部件感知三维资产。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://chensjtu.github.io/papers/sculpt_zh.html">
+  <link rel="alternate" hreflang="en" href="https://chensjtu.github.io/papers/sculpt.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://chensjtu.github.io/papers/sculpt_zh.html">
+  <link rel="alternate" hreflang="x-default" href="https://chensjtu.github.io/papers/sculpt.html">
+  <link rel="stylesheet" href="../global.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="SCULPT: Subtractive Composition for 3D Part Generation">
+  <meta property="og:description" content="通过减法式组合实现可编辑的部件感知三维生成。">
+  <meta property="og:url" content="https://chensjtu.github.io/papers/sculpt_zh.html">
+  <meta property="og:image" content="https://chensjtu.github.io/images/sculpt-teaser.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="SCULPT: Subtractive Composition for 3D Part Generation">
+  <meta name="citation_author" content="Sikuang Li"><meta name="citation_author" content="Chen Yang"><meta name="citation_author" content="Jiemin Fang"><meta name="citation_author" content="Jiazhong Cen"><meta name="citation_author" content="Yuhe Wei"><meta name="citation_author" content="Jichen Pang"><meta name="citation_author" content="Wei Shen"><meta name="citation_author" content="Qi Tian">
+  <meta name="citation_publication_date" content="2026/08/13">
+  <meta name="citation_arxiv_id" content="2608.13541">
+  <meta name="citation_doi" content="10.48550/arXiv.2608.13541">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2608.13541">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/sculpt.html#article","url":"https://chensjtu.github.io/papers/sculpt_zh.html","headline":"SCULPT: Subtractive Composition for 3D Part Generation","description":"SCULPT 在结构化三维潜空间中通过减法式组合生成可编辑的部件感知三维资产。","datePublished":"2026-08-13","inLanguage":"en","isAccessibleForFree":true,"image":"https://chensjtu.github.io/images/sculpt-teaser.jpg","identifier":["arXiv:2608.13541","https://doi.org/10.48550/arXiv.2608.13541"],"sameAs":["https://arxiv.org/abs/2608.13541","https://sculpt-part.github.io/","https://github.com/sculpt-part/SCULPT"],"keywords":["部件感知三维生成","减法式组合","结构化三维潜变量"],"author":[{"@type":"Person","name":"Sikuang Li"},{"@type":"Person","@id":"https://chensjtu.github.io/#person","name":"Chen Yang","url":"https://chensjtu.github.io/","identifier":"https://orcid.org/0000-0003-4496-7849","sameAs":"https://orcid.org/0000-0003-4496-7849"},{"@type":"Person","name":"Jiemin Fang"},{"@type":"Person","name":"Jiazhong Cen"},{"@type":"Person","name":"Yuhe Wei"},{"@type":"Person","name":"Jichen Pang"},{"@type":"Person","name":"Wei Shen"},{"@type":"Person","name":"Qi Tian"}]
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","@id":"https://chensjtu.github.io/papers/sculpt_zh.html#page","url":"https://chensjtu.github.io/papers/sculpt_zh.html","inLanguage":"zh-CN","mainEntity":{"@id":"https://chensjtu.github.io/papers/sculpt.html#article"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","@id":"https://chensjtu.github.io/#person","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0000-0003-4496-7849","url":"https://orcid.org/0000-0003-4496-7849"},"sameAs":"https://orcid.org/0000-0003-4496-7849"}
+  </script>
+</head>
+<body class="paper-page">
+  <main class="paper-page-shell">
+    <nav class="paper-page-nav" aria-label="论文导航"><a href="../index_zh.html">← 杨辰</a><span><a href="sculpt.html" lang="en">English</a> &nbsp;/&nbsp; <strong>中文</strong></span></nav>
+    <article>
+      <header class="paper-page-header">
+        <p class="paper-kicker">部件感知三维生成 · 2026</p>
+        <h1>SCULPT: Subtractive Composition for 3D Part Generation</h1>
+        <p class="paper-authors">Sikuang Li*, <strong><a href="../index_zh.html">Chen Yang*</a></strong>, Jiemin Fang, Jiazhong Cen, Yuhe Wei, Jichen Pang, Wei Shen, Qi Tian</p>
+        <p class="paper-venue"><strong>arXiv</strong>，2026</p>
+        <div class="paper-resource-links" aria-label="论文资源"><a href="https://sculpt-part.github.io/">项目主页</a><a href="https://arxiv.org/abs/2608.13541">arXiv</a><a href="https://arxiv.org/pdf/2608.13541">PDF</a><a href="https://github.com/sculpt-part/SCULPT">代码</a><a href="https://openalex.org/W7203455405">OpenAlex</a></div>
+        <ul class="paper-tags" aria-label="研究关键词"><li>部件感知三维生成</li><li>减法式组合</li><li>结构化三维潜变量</li></ul>
+      </header>
+      <figure class="paper-hero"><img src="../images/sculpt-teaser.jpg" alt="SCULPT 部件感知三维生成展示图"></figure>
+      <section class="paper-section" aria-labelledby="sculpt-zh-tldr"><h2 id="sculpt-zh-tldr">一句话概述</h2><p class="paper-summary">SCULPT 从完整三维物体出发，反复提取一个结构完整的部件并同步生成剩余部分，从而得到数量自适应、共享边界一致且便于编辑的三维部件。</p></section>
+      <section class="paper-section" aria-labelledby="sculpt-zh-abstract"><h2 id="sculpt-zh-abstract">摘要</h2><p>部件感知三维生成不仅需要产生完整连贯的物体，还要显式给出可用于编辑、材质赋予、动画和复用的结构部件。以往方法通常在物体生成后进行分割，或按照预设布局分别生成部件，容易过早固定边界，或造成部件之间的缝隙、穿插与材质不连续。SCULPT 将这一任务表述为结构化三维潜空间中的减法式组合：每一步由联合分割预测器同步生成一个被提取部件和更新后的剩余物体，并同时以输入图像和当前三维状态为条件进行去噪。两个输出在原生稀疏支撑的并集上联合处理，使相邻区域可以重叠，而不必被强制划分为互斥体素。生成在剩余支撑为空或达到安全上限时结束，因此部件数量可以随物体自适应变化。实验表明，该方法在 PartObjaverse 上取得领先的几何质量，同时保持良好的整体重组效果，并能处理基准图像、生成图像和真实照片中的细粒度纹理部件。</p></section>
+      <section class="paper-section" aria-labelledby="sculpt-zh-contributions"><h2 id="sculpt-zh-contributions">主要贡献</h2><ul class="paper-contributions"><li>提出用于自适应部件感知三维生成的减法式组合范式。</li><li>在结构化三维潜空间中联合预测提取部件及其剩余物体。</li><li>在支持纹理部件分解的同时保持高质量的完整物体重组。</li></ul></section>
+      <section class="paper-section" aria-labelledby="sculpt-zh-citation"><h2 id="sculpt-zh-citation">引用</h2><pre class="paper-citation">@article{li2026sculpt,
+  title={SCULPT: Subtractive Composition for 3D Part Generation},
+  author={Li, Sikuang and Yang, Chen and Fang, Jiemin and Cen, Jiazhong and Wei, Yuhe and Pang, Jichen and Shen, Wei and Tian, Qi},
+  journal={arXiv preprint arXiv:2608.13541},
+  year={2026},
+  doi={10.48550/arXiv.2608.13541}
+}</pre></section>
+    </article>
+    <footer class="paper-page-footer"><a href="../index_zh.html#publications">← 返回杨辰的论文列表</a></footer>
+  </main>
+</body>
+</html>

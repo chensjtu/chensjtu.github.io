@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研究路线 | 杨辰 — 世界模型与三维智能</title>
+  <meta name="author" content="Chen Yang">
+  <meta name="description" content="杨辰的开放研究路线，连接世界模型、预训练三维生成、稀疏视图重建与空间智能，并提供公开代码与可复现公平比较记录。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://chensjtu.github.io/research_zh.html">
+  <link rel="alternate" hreflang="en" href="https://chensjtu.github.io/research.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://chensjtu.github.io/research_zh.html">
+  <link rel="alternate" hreflang="x-default" href="https://chensjtu.github.io/research.html">
+  <link rel="stylesheet" href="global.css">
+  <link rel="alternate" type="application/atom+xml" title="杨辰 — 研究与产品动态" href="https://chensjtu.github.io/feed.xml">
+  <link rel="alternate" type="application/json" title="杨辰 — 论文 JSON" href="https://chensjtu.github.io/publications.json">
+  <link rel="alternate" type="application/ld+json" title="杨辰 — 机器可读研究者档案" href="https://chensjtu.github.io/profile.json">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="研究路线 | 杨辰">
+  <meta property="og:description" content="从三维重建、生成式三维模型到世界模型的一条开放、可复现研究路线。">
+  <meta property="og:url" content="https://chensjtu.github.io/research_zh.html">
+  <meta property="og:image" content="https://chensjtu.github.io/images/highlight-worldgrow.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://chensjtu.github.io/research_zh.html#page",
+    "url": "https://chensjtu.github.io/research_zh.html",
+    "name": "杨辰研究路线：世界模型与三维智能",
+    "description": "连接世界模型、预训练三维生成、稀疏视图重建与空间智能的连续研究路线。",
+    "inLanguage": "zh-CN",
+    "about": { "@id": "https://chensjtu.github.io/#person" },
+    "hasPart": [
+      { "@id": "https://chensjtu.github.io/papers/worldgrow.html#article" },
+      { "@id": "https://chensjtu.github.io/papers/unilat3d.html#article" },
+      { "@id": "https://chensjtu.github.io/papers/tigon.html#article" },
+      { "@id": "https://chensjtu.github.io/papers/sculpt.html#article" },
+      { "@id": "https://chensjtu.github.io/papers/gaussianobject.html#article" }
+    ],
+    "keywords": ["世界模型", "三维智能", "空间智能", "三维生成", "三维重建", "具身智能"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://chensjtu.github.io/research_zh.html#open-source-implementations",
+    "name": "杨辰的开源三维生成与世界模型研究",
+    "description": "面向三维生成、世界模型与三维重建可复现评测和公平比较的公开论文及实现记录。",
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "numberOfItems": 5,
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"item":{"@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/sculpt.html#article","name":"SCULPT: Subtractive Composition for 3D Part Generation","url":"https://chensjtu.github.io/papers/sculpt_zh.html","isAccessibleForFree":true,"about":["部件感知三维生成","三维资产生成"],"subjectOf":{"@type":"SoftwareSourceCode","name":"SCULPT 开源实现","codeRepository":"https://github.com/sculpt-part/SCULPT","isAccessibleForFree":true}}},
+      {"@type":"ListItem","position":2,"item":{"@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/tigon.html#article","name":"Text-Image Conditioned 3D Generation","url":"https://chensjtu.github.io/papers/tigon_zh.html","isAccessibleForFree":true,"about":["多模态三维生成","图文条件三维生成"],"subjectOf":{"@type":"SoftwareSourceCode","name":"TIGON 开源实现","codeRepository":"https://github.com/Jumpat/TIGON","isAccessibleForFree":true}}},
+      {"@type":"ListItem","position":3,"item":{"@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/unilat3d.html#article","name":"UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation","url":"https://chensjtu.github.io/papers/unilat3d_zh.html","isAccessibleForFree":true,"about":["预训练三维生成","单阶段三维生成"],"subjectOf":{"@type":"SoftwareSourceCode","name":"UniLat3D 开源实现","codeRepository":"https://github.com/UniLat3D/UniLat3D","isAccessibleForFree":true}}},
+      {"@type":"ListItem","position":4,"item":{"@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/worldgrow.html#article","name":"WorldGrow: Generating Infinite 3D World","url":"https://chensjtu.github.io/papers/worldgrow_zh.html","isAccessibleForFree":true,"about":["世界模型","无限三维世界生成"],"subjectOf":{"@type":"SoftwareSourceCode","name":"WorldGrow 开源实现","codeRepository":"https://github.com/world-grow/WorldGrow","isAccessibleForFree":true}}},
+      {"@type":"ListItem","position":5,"item":{"@type":"ScholarlyArticle","@id":"https://chensjtu.github.io/papers/gaussianobject.html#article","name":"GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting","url":"https://chensjtu.github.io/papers/gaussianobject_zh.html","isAccessibleForFree":true,"about":["稀疏视图三维重建","Gaussian splatting"],"subjectOf":{"@type":"SoftwareSourceCode","name":"GaussianObject 开源实现","codeRepository":"https://github.com/GaussianObject/GaussianObject","isAccessibleForFree":true}}}
+    ]
+  }
+  </script>
+</head>
+<body class="paper-page">
+  <main class="paper-page-shell">
+    <nav class="paper-page-nav" aria-label="研究导航">
+      <a href="index_zh.html">← 杨辰</a>
+      <span><a href="research.html" lang="en">English</a> &nbsp;/&nbsp; <strong>中文</strong></span>
+    </nav>
+    <header class="paper-page-header">
+      <p class="paper-kicker">研究愿景与发展路线</p>
+      <h1>以三维智能构建世界模型</h1>
+      <p class="research-map-intro">我的研究关注机器如何重建、生成并最终模拟连贯的三维环境。整体路线将可靠的空间表示与可扩展生成先验相连接：从神经重建和可编辑场景理解出发，发展预训练三维资产生成，进一步探索面向具身智能的开放式世界模型。</p>
+    </header>
+
+    <section class="paper-section" aria-labelledby="research-directions-zh">
+      <h2 id="research-directions-zh">研究方向</h2>
+      <div class="research-track-grid">
+        <article class="research-track">
+          <h2>世界模型与无限三维世界</h2>
+          <p>生成大规模连续环境，并在世界持续扩展时保持几何和外观一致性。</p>
+          <ul class="research-work-list">
+            <li><a href="papers/worldgrow_zh.html"><strong>WorldGrow</strong></a> — 基于分层场景块的无限三维场景生成。</li>
+          </ul>
+        </article>
+        <article class="research-track">
+          <h2>预训练与可控三维生成</h2>
+          <p>学习可扩展三维先验，同时提供对外观、语义和可编辑物体结构的控制能力。</p>
+          <ul class="research-work-list">
+            <li><a href="papers/unilat3d_zh.html"><strong>UniLat3D</strong></a> — 几何外观统一潜变量。</li>
+            <li><a href="papers/tigon_zh.html"><strong>TIGON</strong></a> — 图文联合条件三维生成。</li>
+            <li><a href="papers/sculpt_zh.html"><strong>SCULPT</strong></a> — 基于减法式组合的部件感知生成。</li>
+          </ul>
+        </article>
+        <article class="research-track">
+          <h2>三维重建与空间表示</h2>
+          <p>从稀疏观测恢复高质量、可浏览的三维内容，并让场景表示服务于后续交互任务。</p>
+          <ul class="research-work-list">
+            <li><a href="papers/gaussianobject_zh.html"><strong>GaussianObject</strong></a> — 四视图高斯泼溅重建。</li>
+            <li><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_NeRFVS_Neural_Radiance_Fields_for_Free_View_Synthesis_via_Geometry_CVPR_2023_paper.pdf"><strong>NeRFVS</strong></a> — 基于几何脚手架的自由视角合成。</li>
+            <li><a href="https://jumpat.github.io/SA3D/"><strong>SA3D</strong></a> — 神经三维场景中的交互式分割。</li>
+          </ul>
+        </article>
+        <article class="research-track">
+          <h2>动态与医疗空间智能</h2>
+          <p>面向形变场景与复杂手术观测，联合建模几何、运动和可靠性。</p>
+          <ul class="research-work-list">
+            <li><a href="https://github.com/Loping151/ForPlane"><strong>LerPlane</strong></a> — 可变形组织快速四维重建。</li>
+            <li><a href="https://loping151.github.io/endogslam/"><strong>EndoGSLAM</strong></a> — 内窥镜稠密重建与跟踪。</li>
+            <li><a href="https://ieeexplore.ieee.org/document/10494102"><strong>ForPlane</strong></a> — 高效动态神经表示。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="paper-section" aria-labelledby="research-trajectory-zh">
+      <h2 id="research-trajectory-zh">研究路线</h2>
+      <ol class="research-timeline">
+        <li><span class="research-period">2021–2023 · 表示</span><strong>可靠的神经场景表示。</strong>NeRFVS、SA3D 和 LerPlane 分别探索几何先验、交互式理解与高效动态重建。</li>
+        <li><span class="research-period">2024 · 重建</span><strong>从有限观测恢复高质量三维。</strong>GaussianObject 和 EndoGSLAM 将高斯泼溅用于极端稀疏视图与医疗场景。</li>
+        <li><span class="research-period">2025–2026 · 生成</span><strong>可扩展、可控制的三维先验。</strong>UniLat3D、TIGON 和 SCULPT 从统一生成表示进一步发展到多模态控制和可编辑部件。</li>
+        <li><span class="research-period">2026 起 · 世界模型</span><strong>开放式空间智能。</strong>WorldGrow 将生成式三维先验连接到可持续扩展的大规模环境，为未来具身智能体构建世界基础。</li>
+      </ol>
+    </section>
+
+    <section class="paper-section" aria-labelledby="open-research-zh">
+      <h2 id="open-research-zh">开放研究与可复现公平比较</h2>
+      <p>我的大多数代表性项目均公开代码、项目主页和完整论文记录，目标是降低独立复现与公平比较的成本，而不仅仅是展示筛选后的演示结果。</p>
+      <div class="research-questions">
+        <ul class="paper-contributions">
+          <li><strong>开放实现：</strong><a href="https://github.com/sculpt-part/SCULPT">SCULPT</a>、<a href="https://github.com/Jumpat/TIGON">TIGON</a>、<a href="https://github.com/UniLat3D/UniLat3D">UniLat3D</a>、<a href="https://github.com/world-grow/WorldGrow">WorldGrow</a>、<a href="https://github.com/GaussianObject/GaussianObject">GaussianObject</a>、<a href="https://github.com/Jumpat/SegmentAnythingin3D">SA3D</a> 与 <a href="https://github.com/Loping151/ForPlane">LerPlane</a> 均提供源代码或可复现研究材料。</li>
+          <li><strong>可比较证据：</strong>稳定的论文页面将方法与论文、DOI 或 arXiv 标识、代码、可用数据或模型、BibTeX 及明确研究关键词相连接。</li>
+          <li><strong>扎实基线：</strong>相关工作覆盖重建、生成、多模态控制、可编辑结构和大规模场景，可沿一条连贯技术路线进行比较。</li>
+          <li><strong>机器可读记录：</strong>完整研究成果提供<a href="publications.json">论文 JSON</a>、<a href="publications.bib">BibTeX</a>、<a href="feed.xml">Atom feed</a> 和<a href="profile.json">研究者档案</a>。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="paper-section" aria-labelledby="portfolio-evidence-zh">
+      <h2 id="portfolio-evidence-zh">这组工作所体现的能力</h2>
+      <p>这组研究为世界模型、三维生成、空间智能、三维重建和具身智能相关研究与工程工作提供了连续证据：不仅包含单篇论文结果，还覆盖问题定义、开放实现、大规模生成与产品落地。</p>
+      <div class="research-questions">
+        <ul class="paper-contributions">
+          <li><strong>技术深度：</strong>工作涵盖神经场景表示、Gaussian splatting、三维生成潜空间、多模态条件、组合式资产与无限世界生成。</li>
+          <li><strong>研究连续性：</strong>从重建与场景理解逐步推进到可控三维生成和基础世界模型。</li>
+          <li><strong>研究到产品的执行力：</strong>先进三维生成技术已落地到消费级创作产品，其中一次产品发布在 50 小时内服务超过 40,000 名用户。</li>
+          <li><strong>开放评测：</strong>公开实现与稳定文献记录使研究者和团队能够直接检查、复现并比较这些工作。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="paper-section" aria-labelledby="research-questions-zh">
+      <h2 id="research-questions-zh">正在探索的问题</h2>
+      <div class="research-questions">
+        <ul class="paper-contributions">
+          <li>基础世界模型如何在长距离空间扩展中保持几何、外观和语义一致？</li>
+          <li>预训练三维生成模型如何在不牺牲资产质量的前提下提供组合式结构？</li>
+          <li>重建、生成与模拟能否共享同一种可扩展空间表示？</li>
+          <li>这些模型如何支持理解、想象并与物理环境交互的具身智能体？</li>
+        </ul>
+      </div>
+    </section>
+    <footer class="paper-page-footer"><a href="index_zh.html">← 返回杨辰的个人主页</a></footer>
+  </main>
+</body>
+</html>

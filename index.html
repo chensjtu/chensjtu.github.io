@@ -7,14 +7,19 @@
   <title>Chen Yang (杨辰) | World Models Researcher &amp; Engineer</title>
 
   <meta name="author" content="Chen Yang">
-  <meta name="description" content="Chen Yang (杨辰) is a world models researcher and engineer at HUAWEI, specializing in foundation world models, spatial intelligence, 3D generative models, 3D reconstruction, and embodied AI.">
-  <meta name="keywords" content="Chen Yang, 杨辰, world models, world model researcher, world model engineer, embodied AI, spatial intelligence, 3D generation, 3D reconstruction, foundation models">
+  <meta name="description" content="Chen Yang (杨辰) is a world models and 3D generation researcher and engineer at HUAWEI, with open-source work in spatial intelligence, 3D reconstruction, and embodied AI.">
+  <meta name="keywords" content="Chen Yang, 杨辰, world models, world model researcher, world model engineer, embodied AI, spatial intelligence, 3D generation, part-aware 3D generation, text-image conditioned 3D generation, 3D reconstruction, foundation models">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="https://chensjtu.github.io/">
   <link rel="icon" type="image/jpeg" href="images/chenyangSIGA.jpg">
   <link rel="stylesheet" href="global.css">
+  <link rel="alternate" type="application/atom+xml" title="Chen Yang — Research and Product Updates" href="https://chensjtu.github.io/feed.xml">
+  <link rel="alternate" type="application/json" title="Chen Yang — Publications JSON" href="https://chensjtu.github.io/publications.json">
+  <link rel="alternate" type="application/ld+json" title="Chen Yang — Machine-readable Researcher Profile" href="https://chensjtu.github.io/profile.json">
+  <link rel="alternate" type="application/x-bibtex" title="Chen Yang — Publications BibTeX" href="https://chensjtu.github.io/publications.bib">
+  <link rel="me" href="https://orcid.org/0000-0003-4496-7849">
   <link rel="alternate" hreflang="en" href="https://chensjtu.github.io/">
   <link rel="alternate" hreflang="zh-CN" href="https://chensjtu.github.io/index_zh.html">
   <link rel="alternate" hreflang="x-default" href="https://chensjtu.github.io/">
@@ -22,7 +27,7 @@
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Chen Yang (杨辰) | World Models Researcher &amp; Engineer">
-  <meta property="og:description" content="Researcher and engineer building foundation world models, 3D generative models, and spatial intelligence for embodied AI.">
+  <meta property="og:description" content="Open and reproducible research in foundation world models, 3D generation, reconstruction, and spatial intelligence for embodied AI.">
   <meta property="og:url" content="https://chensjtu.github.io/">
   <meta property="og:image" content="https://chensjtu.github.io/images/chenyangSIGA.jpg">
   <meta property="og:locale" content="en_US">
@@ -43,16 +48,49 @@
     "name": "Chen Yang (杨辰) | World Models Researcher & Engineer",
     "description": "Academic and professional profile of Chen Yang, a world models researcher and engineer specializing in foundation world models, spatial intelligence, 3D generation, 3D reconstruction, and embodied AI.",
     "inLanguage": "en",
-    "dateModified": "2026-06-16",
+    "dateModified": "2026-08-18",
+    "hasPart": [
+      { "@type": "ScholarlyArticle", "@id": "https://chensjtu.github.io/papers/sculpt.html#article", "url": "https://chensjtu.github.io/papers/sculpt.html" },
+      { "@type": "ScholarlyArticle", "@id": "https://chensjtu.github.io/papers/tigon.html#article", "url": "https://chensjtu.github.io/papers/tigon.html" },
+      { "@type": "ScholarlyArticle", "@id": "https://chensjtu.github.io/papers/unilat3d.html#article", "url": "https://chensjtu.github.io/papers/unilat3d.html" },
+      { "@type": "ScholarlyArticle", "@id": "https://chensjtu.github.io/papers/worldgrow.html#article", "url": "https://chensjtu.github.io/papers/worldgrow.html" },
+      { "@type": "ScholarlyArticle", "@id": "https://chensjtu.github.io/papers/gaussianobject.html#article", "url": "https://chensjtu.github.io/papers/gaussianobject.html" }
+    ],
     "mainEntity": {
       "@type": "Person",
       "@id": "https://chensjtu.github.io/#person",
       "name": "Chen Yang",
       "alternateName": "杨辰",
       "url": "https://chensjtu.github.io/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0003-4496-7849",
+        "url": "https://orcid.org/0000-0003-4496-7849"
+      },
       "image": "https://chensjtu.github.io/images/chenyangSIGA.jpg",
       "jobTitle": "Principal Engineer",
-      "description": "World models researcher and engineer developing foundation world models, pretrained 3D generative models, infinite 3D world generation, high-quality 3D reconstruction, and spatial intelligence for embodied AI.",
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "World Models Researcher and Engineer",
+          "description": "Research and engineering of foundation world models, infinite 3D worlds, spatial intelligence, and embodied AI.",
+          "skills": ["world models", "3D world generation", "spatial intelligence", "embodied AI"]
+        },
+        {
+          "@type": "Occupation",
+          "name": "3D Generation Researcher and Engineer",
+          "description": "Pretrained and controllable 3D generation, 3D reconstruction, Gaussian splatting, and research-to-product engineering.",
+          "skills": ["3D generation", "3D reconstruction", "Gaussian splatting", "multimodal generation"]
+        }
+      ],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "PhD",
+        "name": "Ph.D. in Computer Science and Technology",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Shanghai Jiao Tong University" }
+      },
+      "description": "World models and 3D generation researcher and engineer with 20+ publications and 1,500+ Google Scholar citations, developing foundation world models, infinite 3D worlds, high-quality 3D reconstruction, and spatial intelligence for embodied AI.",
       "worksFor": {
         "@type": "Organization",
         "name": "HUAWEI"
@@ -68,31 +106,159 @@
         "Embodied AI",
         "Spatial Intelligence",
         "Pretrained 3D Generative Models",
+        "Part-Aware 3D Generation",
+        "Text-Image Conditioned 3D Generation",
         "Infinite 3D World Generation",
         "3D Reconstruction",
         "Gaussian Splatting",
         "Neural Radiance Fields"
       ],
+      "skills": [
+        "Foundation world models",
+        "3D generation",
+        "Infinite 3D world generation",
+        "Spatial intelligence",
+        "Embodied AI",
+        "3D reconstruction",
+        "Gaussian splatting",
+        "Research-to-product engineering"
+      ],
+      "publishingPrinciples": "https://chensjtu.github.io/research.html#open-research",
       "award": "MICCAI Young Scientist Award 2023",
       "sameAs": [
         "https://scholar.google.com/citations?user=StdXTR8AAAAJ&hl",
-        "https://github.com/chensjtu"
+        "https://github.com/chensjtu",
+        "https://dblp.org/pid/01/2478-23",
+        "https://orcid.org/0000-0003-4496-7849"
       ],
       "subjectOf": [
         {
-          "@type": "CreativeWork",
+          "@type": "ScholarlyArticle",
+          "@id": "https://chensjtu.github.io/papers/sculpt.html#article",
+          "headline": "SCULPT: Subtractive Composition for 3D Part Generation",
+          "name": "SCULPT: Subtractive Composition for 3D Part Generation",
+          "url": "https://chensjtu.github.io/papers/sculpt.html",
+          "sameAs": [
+            "https://arxiv.org/abs/2608.13541",
+            "https://sculpt-part.github.io/",
+            "https://github.com/sculpt-part/SCULPT",
+            "https://openalex.org/W7203455405"
+          ],
+          "identifier": "arXiv:2608.13541",
+          "datePublished": "2026-08-13",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "author": { "@id": "https://chensjtu.github.io/#person" },
+          "creditText": "Sikuang Li, Chen Yang, Jiemin Fang, Jiazhong Cen, Yuhe Wei, Jichen Pang, Wei Shen, Qi Tian",
+          "keywords": [
+            "Part-Aware 3D Generation",
+            "Subtractive Composition",
+            "Structured 3D Latents"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://chensjtu.github.io/papers/tigon.html#article",
+          "headline": "Text-Image Conditioned 3D Generation",
+          "alternativeHeadline": "TIGON: Text-Image Conditioned 3D Generation",
+          "name": "Text-Image Conditioned 3D Generation",
+          "url": "https://chensjtu.github.io/papers/tigon.html",
+          "sameAs": [
+            "https://arxiv.org/abs/2603.21295",
+            "https://jumpat.github.io/tigon-page/",
+            "https://openaccess.thecvf.com/content/CVPR2026/html/Cen_Text-Image_Conditioned_3D_Generation_CVPR_2026_paper.html",
+            "https://github.com/Jumpat/TIGON",
+            "https://openalex.org/W7140208534",
+            "https://www.semanticscholar.org/paper/341ffe36febe6bb95c2f4ae957c42b14fe212e03"
+          ],
+          "identifier": "arXiv:2603.21295",
+          "datePublished": "2026-03-22",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "author": { "@id": "https://chensjtu.github.io/#person" },
+          "creditText": "Jiazhong Cen, Jiemin Fang, Sikuang Li, Guanjun Wu, Chen Yang, Taoran Yi, Zanwei Zhou, Zhikuan Bao, Lingxi Xie, Wei Shen, Qi Tian",
+          "keywords": [
+            "Text-Image Conditioned 3D Generation",
+            "Multimodal 3D Generation",
+            "Vision-Language Guidance"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://chensjtu.github.io/papers/worldgrow.html#article",
+          "headline": "WorldGrow: Generating Infinite 3D World",
           "name": "WorldGrow: Generating Infinite 3D World",
-          "url": "https://world-grow.github.io/"
+          "url": "https://chensjtu.github.io/papers/worldgrow.html",
+          "sameAs": [
+            "https://arxiv.org/abs/2510.21682",
+            "https://world-grow.github.io/",
+            "https://github.com/world-grow/WorldGrow",
+            "https://ojs.aaai.org/index.php/AAAI/article/view/37571",
+            "https://doi.org/10.1609/aaai.v40i8.37571",
+            "https://openalex.org/W7138420520"
+          ],
+          "identifier": "arXiv:2510.21682",
+          "datePublished": "2025-10-24",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "author": { "@id": "https://chensjtu.github.io/#person" },
+          "creditText": "Sikuang Li, Chen Yang, Jiemin Fang, Taoran Yi, Jia Lu, Jiazhong Cen, Lingxi Xie, Wei Shen, Qi Tian",
+          "award": "AAAI 2026 Oral",
+          "keywords": [
+            "World Models",
+            "Infinite 3D World Generation",
+            "Structured 3D Latents"
+          ]
         },
         {
-          "@type": "CreativeWork",
+          "@type": "ScholarlyArticle",
+          "@id": "https://chensjtu.github.io/papers/unilat3d.html#article",
+          "headline": "UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation",
           "name": "UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation",
-          "url": "https://unilat3d.github.io/"
+          "url": "https://chensjtu.github.io/papers/unilat3d.html",
+          "sameAs": [
+            "https://arxiv.org/abs/2509.25079",
+            "https://unilat3d.github.io/",
+            "https://github.com/UniLat3D/UniLat3D",
+            "https://openalex.org/W4415337644"
+          ],
+          "identifier": "arXiv:2509.25079",
+          "datePublished": "2025-09-29",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "author": { "@id": "https://chensjtu.github.io/#person" },
+          "creditText": "Guanjun Wu, Jiemin Fang, Chen Yang, Sikuang Li, Taoran Yi, Jia Lu, Zanwei Zhou, Jiazhong Cen, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Xinggang Wang, Qi Tian",
+          "keywords": [
+            "3D Generation",
+            "Geometry-Appearance Unified Latents",
+            "Single-Stage Generation"
+          ]
         },
         {
-          "@type": "CreativeWork",
+          "@type": "ScholarlyArticle",
+          "@id": "https://chensjtu.github.io/papers/gaussianobject.html#article",
+          "headline": "GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting",
           "name": "GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting",
-          "url": "https://gaussianobject.github.io/"
+          "url": "https://chensjtu.github.io/papers/gaussianobject.html",
+          "sameAs": [
+            "https://arxiv.org/abs/2402.10259",
+            "https://gaussianobject.github.io/",
+            "https://github.com/GaussianObject/GaussianObject",
+            "https://doi.org/10.1145/3687759",
+            "https://dblp.org/rec/journals/tog/YangLFLXZST24",
+            "https://openalex.org/W4404525549"
+          ],
+          "identifier": "arXiv:2402.10259",
+          "datePublished": "2024-02-15",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "author": { "@id": "https://chensjtu.github.io/#person" },
+          "creditText": "Chen Yang, Sikuang Li, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian",
+          "keywords": [
+            "Sparse-View 3D Reconstruction",
+            "Gaussian Splatting",
+            "3D Object Reconstruction"
+          ]
         }
       ]
     }
@@ -116,8 +282,8 @@
                 <p><strong>About:</strong><br>
                     I am currently a Principal Engineer at HUAWEI, working on research and engineering for <strong>world models and 3D intelligence</strong> in close collaboration with <a href="https://jaminfong.cn/">Dr. Jiemin Fang</a> and <a href="https://www.qitian1987.com/">Dr. Qi Tian</a>.
                     I received my Ph.D. in Computer Science and Technology from <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a> in 2025, supervised by <a href="https://shenwei1231.github.io/">Prof. Wei Shen</a>, and completed my bachelor's degree at SJTU in 2019.
-                    In 2023, I received the <strong><a href="https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/">MICCAI Young Scientist Award</a></strong> for LerPlane, my work on fast 4D reconstruction of deformable tissues.
-                    I have published 10+ papers at top international AI conferences and journals, with over <strong>1,000 citations</strong> on <a href="https://scholar.google.com/citations?user=StdXTR8AAAAJ&amp;hl">Google Scholar</a>.
+                    In 2023, I received the <strong><a href="https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/">MICCAI Young Scientist Award</a></strong> for <a href="https://github.com/Loping151/ForPlane">LerPlane</a>, my work on fast 4D reconstruction of deformable tissues.
+                    I have published 20+ papers at top international AI conferences and journals, with over <strong>1,500 citations</strong> on <a href="https://scholar.google.com/citations?user=StdXTR8AAAAJ&amp;hl">Google Scholar</a>.
                 </p>
             </td>
 
@@ -131,7 +297,7 @@
         <tr style="padding:0px">
             <td colspan="2" style="padding:0% 2.5% 2.5% 2.5%; width:100%; vertical-align:middle">
                 <p><strong>Research Vision:</strong><br>
-                    My research centers on building <strong><a href="https://world-grow.github.io/">foundation world models</a></strong> for embodied intelligence. I develop scalable models that can generate, reconstruct, and simulate complex 3D environments, with the goal of enabling intelligent agents to understand, imagine, and interact with the physical world. My work spans <strong><a href="https://unilat3d.github.io/">pretrained 3D generative models</a></strong>, <strong><a href="https://gaussianobject.github.io/">high-quality 3D reconstruction</a></strong>, and <strong><a href="https://world-grow.github.io/">infinite world generation</a></strong>, forming a unified path toward general-purpose spatial intelligence. I believe world models will become a fundamental infrastructure for embodied AI and a critical step toward AGI.
+                    My research centers on building <strong><a href="https://world-grow.github.io/">foundation world models</a></strong> for embodied intelligence. I develop scalable models that can generate, reconstruct, and simulate complex 3D environments, with the goal of enabling intelligent agents to understand, imagine, and interact with the physical world. My work spans <strong><a href="https://unilat3d.github.io/">pretrained 3D generative models</a></strong>, <strong><a href="https://gaussianobject.github.io/">high-quality 3D reconstruction</a></strong>, and <strong><a href="https://world-grow.github.io/">infinite world generation</a></strong>, forming a unified path toward general-purpose spatial intelligence. Most representative projects publish code and detailed artifacts to support reproducible evaluation and fair comparison; the evidence is collected in my <a href="research.html#open-research">open research record</a>. I believe world models will become a fundamental infrastructure for embodied AI and a critical step toward AGI.
                 </p>
                 <aside class="recruitment-callout">
                     <strong class="recruitment-title">Research Intern Openings</strong>
@@ -140,10 +306,13 @@
                 </aside>
                 <p style="text-align:center">
                     <strong><a href="mailto:chenyang.res@gmail.com">Email</a></strong> &nbsp;/&nbsp;
+                    <strong><a href="./research.html">Research Map</a></strong> &nbsp;/&nbsp;
                     <strong><a href="./cv_en.pdf">CV (EN)</a></strong> &nbsp;/&nbsp;
                     <strong><a href="./cv_zh.pdf">CV (中文)</a></strong> &nbsp;/&nbsp;
-                    <strong><a href="https://scholar.google.com/citations?user=StdXTR8AAAAJ&amp;hl">Scholar</a></strong> &nbsp;/&nbsp;
-                    <strong><a href="https://github.com/chensjtu">Github</a></strong>
+                    <strong><a rel="me" href="https://scholar.google.com/citations?user=StdXTR8AAAAJ&amp;hl">Scholar</a></strong> &nbsp;/&nbsp;
+                    <strong><a rel="me" href="https://dblp.org/pid/01/2478-23">DBLP</a></strong> &nbsp;/&nbsp;
+                    <strong><a rel="me" href="https://orcid.org/0000-0003-4496-7849">ORCID</a></strong> &nbsp;/&nbsp;
+                    <strong><a rel="me" href="https://github.com/chensjtu">Github</a></strong>
                 </p>
             </td>
         </tr>
@@ -192,7 +361,7 @@
     </div>
 
     <div class="pill">
-      <a href="https://link.springer.com/chapter/10.1007/978-3-031-43996-4_5">
+      <a href="https://github.com/Loping151/ForPlane">
         <video class="thumbnail hover-video" poster="images/highlight-lerplane.png" autoplay preload="metadata" muted loop playsinline>
           <source src="videos/highlight-lerplane.mp4" type="video/mp4">
         </video>
@@ -208,15 +377,16 @@
         <td style="padding:20px;width:100%;vertical-align:middle">
           <h2 class="section-heading">News</h2>
           <button class="explore-button" type="button" data-target="news">Explore all</button>
-          <p> <span class="news-date"><strong>2026-06:</strong></span> <span class="news-emoji" aria-hidden="true">🔥</span> <strong><a href="https://m.thepaper.cn/newsDetail_forward_33283239">Pixel Artisan PRO (像素匠PRO)</a></strong> surpasses <strong>40,000 users</strong> within 50 hours of launch. </p>
-          <p> <span class="news-date"><strong>2026-06:</strong></span> <span class="news-emoji" aria-hidden="true">🚀</span> <strong><a href="https://m.thepaper.cn/newsDetail_forward_33283239">Xiaoyi 3D × Pixel Artisan PRO (小艺3D × 像素匠PRO)</a></strong> launches, debuts at <strong><em>HDC 2026</em></strong>, and receives a <strong><a href="https://cn.chinadaily.com.cn/a/202606/12/WS6a2bd3bca310942cc49b1865.html">HarmonyOS Innovative Premium App Award</a></strong>. </p>
-          <p> <span class="news-date"><strong>2026-06:</strong></span> <span class="news-emoji" aria-hidden="true">🎉</span> <strong><a href="https://hustvl.github.io/Snap-Snap/">Snap-Snap</a></strong> is accepted to <strong><em>TCSVT</em></strong>. </p>
-          <p> <span class="news-date"><strong>2026-03:</strong></span> <span class="news-emoji" aria-hidden="true">🎉</span> <strong><a href="https://jumpat.github.io/tigon-page/">TIGON</a></strong> is accepted to <strong><em>CVPR 2026</em></strong>. </p>
-          <p> <span class="news-date"><strong>2026-03:</strong></span> <span class="news-emoji" aria-hidden="true">🎉</span> <strong><a href="https://unilat3d.github.io/">UniLat3D</a></strong> is accepted to <strong><em><a href="https://openaccess.thecvf.com/CVPR2026_findings">Findings of CVPR 2026</a></em></strong>. </p>
-          <p> <span class="news-date"><strong>2026-01:</strong></span> <span class="news-emoji" aria-hidden="true">🌐</span> The <strong><a href="https://world-grow.github.io/gallery.html">WorldGrow Gallery</a></strong> is now online. </p>
-          <p> <span class="news-date"><strong>2025-11:</strong></span> <span class="news-emoji" aria-hidden="true">🚀</span> <strong><a href="https://world-grow.github.io/">WorldGrow</a></strong> is accepted as <strong><em>Oral</em></strong> presentation in <strong><em>AAAI 2026</em></strong>. </p>
+          <p> <span class="news-date"><strong>2026-08:</strong></span> <span class="news-emoji" aria-hidden="true">🚀</span> Our new work <strong><a href="https://sculpt-part.github.io/">SCULPT</a></strong> is released, introducing subtractive composition for 3D part generation. </p>
+          <p id="news-pixel-artisan-pro-users"> <span class="news-date"><strong>2026-06:</strong></span> <span class="news-emoji" aria-hidden="true">🔥</span> <strong><a href="https://m.thepaper.cn/newsDetail_forward_33283239">Pixel Artisan PRO (像素匠PRO)</a></strong> surpasses <strong>40,000 users</strong> within 50 hours of launch. </p>
+          <p id="news-xiaoyi3d-pixel-artisan-pro"> <span class="news-date"><strong>2026-06:</strong></span> <span class="news-emoji" aria-hidden="true">🚀</span> <strong><a href="https://m.thepaper.cn/newsDetail_forward_33283239">Xiaoyi 3D × Pixel Artisan PRO (小艺3D × 像素匠PRO)</a></strong> launches, debuts at <strong><em>HDC 2026</em></strong>, and receives a <strong><a href="https://cn.chinadaily.com.cn/a/202606/12/WS6a2bd3bca310942cc49b1865.html">HarmonyOS Innovative Premium App Award</a></strong>. </p>
+          <p id="news-snap-snap"> <span class="news-date"><strong>2026-06:</strong></span> <span class="news-emoji" aria-hidden="true">🎉</span> <strong><a href="https://hustvl.github.io/Snap-Snap/">Snap-Snap</a></strong> is accepted to <strong><em>TCSVT</em></strong>. </p>
+          <p id="news-tigon-cvpr-2026"> <span class="news-date"><strong>2026-03:</strong></span> <span class="news-emoji" aria-hidden="true">🎉</span> <strong><a href="https://jumpat.github.io/tigon-page/">TIGON</a></strong> is accepted to <strong><em>CVPR 2026</em></strong>. </p>
+          <p id="news-unilat3d-cvpr-findings-2026"> <span class="news-date"><strong>2026-03:</strong></span> <span class="news-emoji" aria-hidden="true">🎉</span> <strong><a href="https://unilat3d.github.io/">UniLat3D</a></strong> is accepted to <strong><em><a href="https://openaccess.thecvf.com/CVPR2026_findings">Findings of CVPR 2026</a></em></strong>. </p>
+          <p id="news-worldgrow-gallery"> <span class="news-date"><strong>2026-01:</strong></span> <span class="news-emoji" aria-hidden="true">🌐</span> The <strong><a href="https://world-grow.github.io/gallery.html">WorldGrow Gallery</a></strong> is now online. </p>
+          <p id="news-worldgrow-aaai-oral"> <span class="news-date"><strong>2025-11:</strong></span> <span class="news-emoji" aria-hidden="true">🚀</span> <strong><a href="https://world-grow.github.io/">WorldGrow</a></strong> is accepted as <strong><em>Oral</em></strong> presentation in <strong><em>AAAI 2026</em></strong>. </p>
           <p> <span class="news-date"><strong>2025-11:</strong></span> <span class="news-emoji" aria-hidden="true">🔥</span> Three papers accepted to <strong><em>AAAI 2026</em></strong>. </p>
-          <p> <span class="news-date"><strong>2025-07:</strong></span> <span class="news-emoji" aria-hidden="true">⭐</span> <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> receives over <strong><em>1200</em></strong> stars. </p>
+          <p id="news-gaussianobject-stars"> <span class="news-date"><strong>2025-07:</strong></span> <span class="news-emoji" aria-hidden="true">⭐</span> <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> receives over <strong><em>1200</em></strong> stars. </p>
           <p> <span class="news-date"><strong>2025-06:</strong></span> <span class="news-emoji" aria-hidden="true">📘</span> <strong><a href="https://hcv.boyuai.com/">动手学计算机视觉</a></strong> and its English version, <strong><em><a href="https://link.springer.com/book/10.1007/978-981-95-4835-4">Hands-on Computer Vision</a></em></strong>, are now available. The book is designed for professionals and researchers interested in computer vision, and can also serve as a textbook for computer vision courses in AI-related programs. </p>
           <p data-collapsible="news"> <span class="news-date"><strong>2025-02:</strong></span> <span class="news-emoji" aria-hidden="true">⭐</span> <strong><a href="https://gaussianobject.github.io/">GaussianObject</a></strong> receives over <strong><em>1000</em></strong> stars. </p>
           <!-- <p> <span class="news-date"><strong>2024-12:</strong></span> 💪💪💪 <strong><a href="https://jumpat.github.io/SAGA/">SAGA</a></strong> is finally accepted by <strong><em>AAAI 2025</em></strong>. </p> -->
@@ -242,19 +412,53 @@
       <tr>
         <td>
           <div class="floating-card">
+            <div class="video-container">
+              <video autoplay loop muted controls playsinline preload="metadata" poster="images/sculpt-teaser.jpg">
+                <source src="videos/sculpt.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="paper-info">
+              <a href="papers/sculpt.html">
+                <span class="paper-title">SCULPT: Subtractive Composition for 3D Part Generation</span>
+              </a>
+              Sikuang Li*, <strong>Chen Yang*</strong>, Jiemin Fang, Jiazhong Cen, Yuhe Wei, Jichen Pang, Wei Shen, Qi Tian
+              <br>
+              <strong><em>arXiv</em></strong>, 2026
+              <br>
+              <a href="papers/sculpt.html">Details</a> / <a href="https://sculpt-part.github.io/">Page</a> / <a href="https://arxiv.org/abs/2608.13541">arXiv</a> /
+              <a href="https://github.com/sculpt-part/SCULPT">Code</a>
+              <ul class="paper-tags" aria-label="Research keywords">
+                <li>Part-aware 3D Generation</li>
+                <li>Subtractive Composition</li>
+                <li>Structured 3D Latents</li>
+              </ul>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="floating-card">
             <div class="image-container">
               <img src="images/tigon-teaser.png" alt="TIGON teaser">
             </div>
             <div class="paper-info">
-              <a href="https://jumpat.github.io/tigon-page/">
+              <a href="papers/tigon.html">
                 <span class="paper-title">TIGON: Text-Image Conditioned 3D Generation</span>
               </a>
               Jiazhong Cen, Jiemin Fang, Sikuang Li, Guanjun Wu, <strong>Chen Yang</strong>, Taoran Yi, Zanwei Zhou, Zhikuan Bao, Lingxi Xie, Wei Shen, Qi Tian
               <br>
               <strong><em>CVPR</em></strong>, 2026
               <br>
-              <a href="https://jumpat.github.io/tigon-page/">Page</a> / <a href="https://arxiv.org/abs/2603.15936">arXiv</a> /
+              <a href="papers/tigon.html">Details</a> / <a href="https://jumpat.github.io/tigon-page/">Page</a> / <a href="https://arxiv.org/abs/2603.21295">arXiv</a> /
               <a href="https://github.com/Jumpat/TIGON">Code</a> / <a href="https://huggingface.co/collections/jiazhongc/tigon-6913e091c20895d0655238cb">Models</a>
+              <ul class="paper-tags" aria-label="Research keywords">
+                <li>Text-Image Conditioned 3D</li>
+                <li>Multimodal Generation</li>
+                <li>Vision-Language Guidance</li>
+              </ul>
             </div>
           </div>
         </td>
@@ -264,21 +468,26 @@
         <td>
           <div class="floating-card">
             <div class="video-container">
-              <video autoplay loop muted controls>
+              <video autoplay loop muted controls preload="metadata">
                 <source src="videos/unilat3d.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </div>
             <div class="paper-info">
-              <a href="https://unilat3d.github.io/">
+              <a href="papers/unilat3d.html">
                 <span class="paper-title">UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation</span>
               </a>
               Guanjun Wu*, Jiemin Fang*, <strong>Chen Yang*</strong>, Sikuang Li, Taoran Yi, Jia Lu, Zanwei Zhou, Jiazhong Cen, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Xinggang Wang, Qi Tian
               <br>
               <strong><em>Findings of CVPR</em></strong>, 2026
               <br>
-              <a href="https://unilat3d.github.io/">Page</a> / <a href="https://arxiv.org/abs/2509.25079">arXiv</a> /
+              <a href="papers/unilat3d.html">Details</a> / <a href="https://unilat3d.github.io/">Page</a> / <a href="https://arxiv.org/abs/2509.25079">arXiv</a> /
               <a href="https://github.com/UniLat3D/UniLat3D">Code</a> / <a href="https://huggingface.co/spaces/UniLat3D/UniLat3D">Demo</a>
+              <ul class="paper-tags" aria-label="Research keywords">
+                <li>3D Generation</li>
+                <li>Geometry-Appearance Latents</li>
+                <li>Single-Stage Generation</li>
+              </ul>
             </div>
           </div>
         </td>
@@ -312,46 +521,26 @@
         <td>
           <div class="floating-card">
             <div class="video-container">
-              <video autoplay loop muted controls>
+              <video autoplay loop muted controls preload="metadata">
                 <source src="videos/worldgrow.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </div>
             <div class="paper-info">
-              <a href="https://world-grow.github.io/">
+              <a href="papers/worldgrow.html">
                 <span class="paper-title">WorldGrow: Generating Infinite 3D World</span>
               </a>
               Sikuang Li*, <strong>Chen Yang*</strong>, Jiemin Fang, Taoran Yi, Jia Lu, Jiazhong Cen, Lingxi Xie, Wei Shen, Qi Tian
               <br>
               <strong><em>AAAI</em></strong>, 2026, <strong>Oral</strong>
               <br>
-              <a href="https://world-grow.github.io/">Page</a> / <a href="https://arxiv.org/abs/2510.21682">arXiv</a> /
+              <a href="papers/worldgrow.html">Details</a> / <a href="https://world-grow.github.io/">Page</a> / <a href="https://arxiv.org/abs/2510.21682">arXiv</a> /
               <a href="https://github.com/world-grow/WorldGrow">Code</a> / <a href="https://www.youtube.com/watch?v=blVXMwGHQO4">Video</a>
-            </div>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="floating-card">
-            <div class="video-container">
-              <video autoplay loop muted controls>
-                <source src="videos/go.mov" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="paper-info">
-              <a href="https://gaussianobject.github.io/">
-                <span class="paper-title">GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting</span>
-              </a>
-              <strong>Chen Yang*</strong>, Sikuang Li*, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian
-              <br>
-              <strong><em>TOG(SIGGRAPH Asia)</em></strong>, 2024
-              <br>
-              <a href="https://gaussianobject.github.io/">Page</a> / <a href="https://arxiv.org/abs/2402.10259">arXiv</a> /
-              <a href="https://github.com/GaussianObject/GaussianObject">Code</a> / <a href="https://asia.siggraph.org/2024/">ACM Paper</a> /
-              <a href="https://www.youtube.com/watch?v=s5arAXdgdZQ&amp;themeRefresh=1">Video</a>
+              <ul class="paper-tags" aria-label="Research keywords">
+                <li>World Models</li>
+                <li>Infinite 3D Generation</li>
+                <li>Structured Latents</li>
+              </ul>
             </div>
           </div>
         </td>
@@ -361,7 +550,7 @@
         <td>
           <div class="floating-card">
             <div class="video-container">
-              <video autoplay loop muted controls>
+              <video autoplay loop muted controls preload="metadata">
                 <source src="https://loping151.github.io/endogslam/static/video/1_1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -386,7 +575,7 @@
           <div class="floating-card">
             <div class="paper-card-content">
               <div class="image-container">
-                <video autoplay loop muted controls>
+                <video autoplay loop muted controls preload="metadata">
                   <source src="videos/sa3d.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -412,7 +601,7 @@
         <td>
           <div class="floating-card">
             <div class="video-container">
-              <video autoplay loop muted controls>
+              <video autoplay loop muted controls preload="metadata">
                 <source src="videos/lerplane.mov" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -436,7 +625,7 @@
       <td>
         <div class="floating-card">
           <div class="video-container">
-            <video autoplay loop muted controls>
+            <video autoplay loop muted controls preload="metadata">
               <source src="videos/nerfvs.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -450,7 +639,7 @@
             <strong><em>CVPR</em></strong>, 2023
             <br>
             <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_NeRFVS_Neural_Radiance_Fields_for_Free_View_Synthesis_via_Geometry_CVPR_2023_paper.pdf">Paper</a> /
-            <a href="https://arxiv.org/abs/2304.06287">Code</a>
+            <a href="https://arxiv.org/abs/2304.06287">arXiv</a>
           </div>
         </div>
     </td>
@@ -500,24 +689,30 @@
     </tbody>
   </table>
 
-  <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
-          <h2 class="section-heading">Publications</h2>
-          <p> Full publications can also be found in my <a href="https://scholar.google.com/citations?user=StdXTR8AAAAJ&amp;hl">Google Scholar</a>. </p>
+          <h2 class="section-heading" id="publications">Publications</h2>
+          <p> Full publications can also be found in my <a href="https://scholar.google.com/citations?user=StdXTR8AAAAJ&amp;hl">Google Scholar</a>. Machine-readable records: <a href="publications.bib">BibTeX</a> / <a href="publications.json">JSON</a> / <a href="feed.xml">Atom feed</a>. </p>
           <button class="explore-button" type="button" data-target="publications">Explore all</button>
 
           <h3>2026</h3>
           <p>
+            Sikuang Li*, <strong>Chen Yang*</strong>, Jiemin Fang, Jiazhong Cen, Yuhe Wei, Jichen Pang, Wei Shen, Qi Tian.<br>
+            <a href="papers/sculpt.html">SCULPT: Subtractive Composition for 3D Part Generation</a>.
+            <strong><em>arXiv</em></strong>, 2026.
+          </p>
+
+          <p>
             Jiazhong Cen, Jiemin Fang, Sikuang Li, Guanjun Wu, <strong>Chen Yang</strong>, Taoran Yi, Zanwei Zhou, Zhikuan Bao, Lingxi Xie, Wei Shen, Qi Tian.<br>
-            <a href="https://jumpat.github.io/tigon-page/">TIGON: Text-Image Conditioned 3D Generation</a>.
+            <a href="papers/tigon.html">TIGON: Text-Image Conditioned 3D Generation</a>.
             <strong><em>CVPR</em></strong>, 2026.
           </p>
 
           <p>
             Guanjun Wu*, Jiemin Fang*, <strong>Chen Yang*</strong>, Sikuang Li, Taoran Yi, Jia Lu, Zanwei Zhou, Jiazhong Cen, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Xinggang Wang, Qi Tian.<br>
-            <a href="https://unilat3d.github.io/">UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation</a>.
+            <a href="papers/unilat3d.html">UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation</a>.
             <strong><em>Findings of CVPR</em></strong>, 2026.
           </p>
 
@@ -530,7 +725,7 @@
           <h3>2025</h3>
           <p>
             Sikuang Li*, <strong>Chen Yang*</strong>, Jiemin Fang, Taoran Yi, Jia Lu, Jiazhong Cen, Lingxi Xie, Wei Shen, Qi Tian.<br>
-            <a href="https://world-grow.github.io/">WorldGrow: Infinite 3D Scene Generation with Structured Latents</a>.
+            <a href="papers/worldgrow.html">WorldGrow: Generating Infinite 3D World</a>.
             <strong><em>AAAI</em></strong>, 2026. <strong><em>(Oral)</em></strong>
           </p>
 
@@ -566,7 +761,7 @@
 
           <p data-collapsible="publications">
             <strong>Chen Yang*</strong>, Sikuang Li*, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian.<br>
-            <a href="https://gaussianobject.github.io/">GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting</a>.
+            <a href="papers/gaussianobject.html">GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting</a>.
             <strong><em>ACM Trans. Graphics (Siggraph Asia)</em></strong>, 2024.
           </p>
 

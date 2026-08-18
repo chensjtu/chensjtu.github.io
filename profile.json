@@ -1,0 +1,183 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://chensjtu.github.io/#profile",
+  "url": "https://chensjtu.github.io/",
+  "name": "Chen Yang (杨辰) — World Models and 3D Generation Researcher",
+  "description": "Machine-readable profile of Chen Yang, a researcher and Principal Engineer with 20+ publications and 1,500+ Google Scholar citations, working on foundation world models, pretrained and controllable 3D generation, spatial intelligence, 3D reconstruction, and embodied AI.",
+  "inLanguage": "en",
+  "dateModified": "2026-08-18",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://chensjtu.github.io/#person",
+    "name": "Chen Yang",
+    "alternateName": "杨辰",
+    "url": "https://chensjtu.github.io/",
+    "image": "https://chensjtu.github.io/images/chenyangSIGA.jpg",
+    "email": "mailto:chenyang.res@gmail.com",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "value": "0000-0003-4496-7849",
+      "url": "https://orcid.org/0000-0003-4496-7849"
+    },
+    "sameAs": [
+      "https://orcid.org/0000-0003-4496-7849",
+      "https://scholar.google.com/citations?user=StdXTR8AAAAJ&hl",
+      "https://dblp.org/pid/01/2478-23",
+      "https://github.com/chensjtu"
+    ],
+    "jobTitle": "Principal Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "HUAWEI"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Shanghai Jiao Tong University",
+      "sameAs": "https://www.sjtu.edu.cn/"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "PhD",
+      "name": "Ph.D. in Computer Science and Technology",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "Shanghai Jiao Tong University"
+      }
+    },
+    "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "name": "World Models Researcher and Engineer",
+        "description": "Research and engineering of foundation world models, infinite 3D worlds, spatial intelligence, and embodied AI.",
+        "skills": [
+          "world models",
+          "3D world generation",
+          "spatial intelligence",
+          "embodied AI"
+        ]
+      },
+      {
+        "@type": "Occupation",
+        "name": "3D Generation Researcher and Engineer",
+        "description": "Research and engineering of pretrained and controllable 3D generation, multimodal 3D generation, 3D reconstruction, and Gaussian splatting.",
+        "skills": [
+          "3D generation",
+          "multimodal generation",
+          "3D reconstruction",
+          "Gaussian splatting"
+        ]
+      }
+    ],
+    "knowsAbout": [
+      "Foundation world models",
+      "World models for embodied AI",
+      "Infinite 3D world generation",
+      "Pretrained 3D generative models",
+      "Controllable 3D generation",
+      "Text-image conditioned 3D generation",
+      "Part-aware 3D generation",
+      "Spatial intelligence",
+      "Embodied AI",
+      "Sparse-view 3D reconstruction",
+      "Gaussian splatting",
+      "Neural radiance fields"
+    ],
+    "skills": [
+      "Research problem formulation",
+      "Foundation model research",
+      "3D generative modeling",
+      "World generation",
+      "Reproducible evaluation",
+      "Open-source research",
+      "Research-to-product engineering"
+    ],
+    "award": "MICCAI Young Scientist Award 2023",
+    "publishingPrinciples": "https://chensjtu.github.io/research.html#open-research",
+    "subjectOf": [
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://chensjtu.github.io/papers/sculpt.html#article",
+        "name": "SCULPT: Subtractive Composition for 3D Part Generation",
+        "url": "https://chensjtu.github.io/papers/sculpt.html",
+        "isAccessibleForFree": true,
+        "about": ["part-aware 3D generation", "structured 3D latents"],
+        "author": { "@id": "https://chensjtu.github.io/#person" },
+        "sameAs": ["https://arxiv.org/abs/2608.13541", "https://sculpt-part.github.io/"],
+        "subjectOf": {
+          "@type": "SoftwareSourceCode",
+          "name": "SCULPT open-source implementation",
+          "codeRepository": "https://github.com/sculpt-part/SCULPT",
+          "isAccessibleForFree": true
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://chensjtu.github.io/papers/tigon.html#article",
+        "name": "Text-Image Conditioned 3D Generation",
+        "alternativeHeadline": "TIGON: Text-Image Conditioned 3D Generation",
+        "url": "https://chensjtu.github.io/papers/tigon.html",
+        "isAccessibleForFree": true,
+        "about": ["multimodal 3D generation", "text-image conditioned 3D generation"],
+        "author": { "@id": "https://chensjtu.github.io/#person" },
+        "sameAs": ["https://arxiv.org/abs/2603.21295", "https://jumpat.github.io/tigon-page/"],
+        "subjectOf": {
+          "@type": "SoftwareSourceCode",
+          "name": "TIGON open-source implementation",
+          "codeRepository": "https://github.com/Jumpat/TIGON",
+          "isAccessibleForFree": true
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://chensjtu.github.io/papers/unilat3d.html#article",
+        "name": "UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation",
+        "url": "https://chensjtu.github.io/papers/unilat3d.html",
+        "isAccessibleForFree": true,
+        "about": ["pretrained 3D generation", "single-stage 3D generation"],
+        "author": { "@id": "https://chensjtu.github.io/#person" },
+        "sameAs": ["https://arxiv.org/abs/2509.25079", "https://unilat3d.github.io/"],
+        "subjectOf": {
+          "@type": "SoftwareSourceCode",
+          "name": "UniLat3D open-source implementation",
+          "codeRepository": "https://github.com/UniLat3D/UniLat3D",
+          "isAccessibleForFree": true
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://chensjtu.github.io/papers/worldgrow.html#article",
+        "name": "WorldGrow: Generating Infinite 3D World",
+        "url": "https://chensjtu.github.io/papers/worldgrow.html",
+        "isAccessibleForFree": true,
+        "about": ["world models", "infinite 3D world generation", "spatial intelligence"],
+        "author": { "@id": "https://chensjtu.github.io/#person" },
+        "sameAs": ["https://doi.org/10.1609/aaai.v40i8.37571", "https://world-grow.github.io/"],
+        "award": "AAAI 2026 Oral",
+        "subjectOf": {
+          "@type": "SoftwareSourceCode",
+          "name": "WorldGrow open-source implementation",
+          "codeRepository": "https://github.com/world-grow/WorldGrow",
+          "isAccessibleForFree": true
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://chensjtu.github.io/papers/gaussianobject.html#article",
+        "name": "GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting",
+        "url": "https://chensjtu.github.io/papers/gaussianobject.html",
+        "isAccessibleForFree": true,
+        "about": ["sparse-view 3D reconstruction", "Gaussian splatting"],
+        "author": { "@id": "https://chensjtu.github.io/#person" },
+        "sameAs": ["https://doi.org/10.1145/3687759", "https://gaussianobject.github.io/"],
+        "subjectOf": {
+          "@type": "SoftwareSourceCode",
+          "name": "GaussianObject open-source implementation",
+          "codeRepository": "https://github.com/GaussianObject/GaussianObject",
+          "isAccessibleForFree": true
+        }
+      }
+    ]
+  }
+}
