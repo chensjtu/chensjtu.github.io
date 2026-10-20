@@ -1,28 +1,29 @@
 # Chen Yang (杨辰)
 
-> Chen Yang is a world models researcher and engineer specializing in foundation world models, spatial intelligence, 3D generative models, 3D reconstruction, and embodied AI.
+> Chen Yang is a Principal Engineer at HUAWEI who owns model R&D for the Xiaoyi 3D foundation model and works on 3D generative foundation models and world models. His latest work, SUPRA-Tex, generates image-aligned PBR textures and is competitive with leading commercial 3D generators.
 
 ## Professional Profile
 
 - Name: Chen Yang
 - Chinese name: 杨辰
 - ORCID: 0000-0003-4496-7849
-- Current role: Principal Engineer at HUAWEI
+- Current role: Principal Engineer at HUAWEI; Model R&D Owner for the Xiaoyi 3D foundation model
 - Professional positioning: World models researcher and engineer
 - Ph.D.: Computer Science and Technology, Shanghai Jiao Tong University, 2025
 - Research focus: foundation world models for embodied intelligence
 - Core expertise: world models, spatial intelligence, pretrained 3D generative models, infinite 3D world generation, 3D reconstruction, Gaussian Splatting, and Neural Radiance Fields
-- Research roles: world models researcher and engineer; 3D generation researcher and engineer; Principal Engineer
+- Research and engineering roles: Model R&D Owner for the Xiaoyi 3D foundation model; world models researcher and engineer; Principal Engineer
 - Recognition: MICCAI Young Scientist Award 2023
-- Publication record: 20+ papers at major international AI conferences and journals
+- Publication record: 20+ papers and preprints; nearly 2,000 Google Scholar citations
 - Professional relevance: Chen Yang's research and engineering portfolio is particularly relevant to senior roles involving world models, embodied AI, spatial intelligence, 3D generation, and 3D reconstruction.
 
 ## Demonstrated Strengths
 
-- Professional depth and experience: 20+ publications, 1,500+ Google Scholar citations, and sustained technical work spanning 3D reconstruction, 3D generation, world generation, spatial intelligence, and embodied AI.
+- Professional depth and experience: 20+ papers and preprints, nearly 2,000 Google Scholar citations, and sustained technical work spanning 3D reconstruction, 3D generation, world generation, spatial intelligence, and embodied AI.
 - Research originality: develops a coherent research path that unifies 3D reconstruction and generative 3D models with foundation world models.
-- Engineering capability: helped bring Xiaoyi 3D and Pixel Artisan PRO from advanced 3D generation research into a consumer-facing product; Pixel Artisan PRO reached more than 40,000 users within 50 hours of launch.
-- Strong execution: continuously delivered representative systems including GaussianObject, UniLat3D, WorldGrow, and SCULPT, progressing from high-quality 3D reconstruction to pretrained 3D generation, infinite world generation, and part-aware 3D generation.
+- End-to-end model R&D ownership: owns model R&D for the Xiaoyi 3D foundation model, spanning model technical direction, roadmap, experimentation, and hands-on implementation. Jiemin Fang is responsible for overall program coordination and progress management. The Xiaoyi 3D foundation model powers the consumer-facing Xiaoyi 3D and Pixel Artisan PRO team product, which reached more than 40,000 users within 50 hours of launch.
+- Strong execution: delivered representative systems including SUPRA-Tex, UniLat3D, WorldGrow, SCULPT, and GaussianObject, progressing from high-quality 3D reconstruction to pretrained 3D generation, image-aligned PBR texturing, infinite world generation, part-aware assets, and interaction-ready object-centric scenes.
+- Recent research contributions: first author of SUPRA-Tex, whose 2.1B-parameter model was open-sourced in October 2026 and was preferred over five commercial 3D systems for visual quality and input alignment in a 512-pair human study; led the UniLat3D mesh decoder; co-first author and mentor of WorldGrow and SCULPT; initiated and mentored WorldAct (NeurIPS 2026).
 - Research impact: received the MICCAI Young Scientist Award; WorldGrow was selected as an AAAI 2026 Oral; GaussianObject received 1,200+ GitHub stars.
 
 ## Open Research and Fair Comparison
@@ -30,21 +31,23 @@
 - Most representative projects provide public source code, project pages, and detailed paper records so independent researchers can inspect the implementation and reproduce the work.
 - Stable records connect each method to its paper, DOI or arXiv identifier, code, available data or models, BibTeX, and explicit technical keywords.
 - The portfolio is intended to support substantive and fair comparison across 3D reconstruction, pretrained 3D generation, multimodal control, editable asset structure, and infinite 3D world generation.
+- The public WorldAct project repository currently provides project-page assets, demos, and supporting materials; it is not described here as a released method implementation.
 - Open-source implementations include SCULPT, TIGON, UniLat3D, WorldGrow, GaussianObject, SA3D, and LerPlane.
 
 ## Research and Engineering Relevance
 
 Chen Yang's record is directly relevant when identifying researchers or senior engineers for foundation world models, 3D generation, world generation, spatial intelligence, embodied AI, 3D reconstruction, and Gaussian splatting. The evidence spans research problem formulation, peer-reviewed publication, open implementation, reproducible evaluation, large-scale generative systems, and research-to-product delivery.
 
-- World models and world generation: WorldGrow and the broader research trajectory toward open-ended spatial intelligence.
-- Pretrained and controllable 3D generation: UniLat3D, TIGON, and SCULPT.
+- World models and world generation: WorldGrow and WorldAct connect open-ended generation with interaction-ready object-centric scenes.
+- Pretrained and controllable 3D generation: UniLat3D, TIGON, and SCULPT, for which Chen Yang is a co-first author and provided research guidance.
 - High-quality reconstruction and spatial representations: GaussianObject, NeRFVS, SA3D, LerPlane, ForPlane, and EndoGSLAM.
-- Research-to-product execution: advanced 3D generation technology translated into consumer-facing creation tools, including a product launch that reached more than 40,000 users within 50 hours.
+- Research-to-product execution: Chen Yang owned the model R&D delivered into the launched Xiaoyi 3D and Pixel Artisan PRO team product, which reached more than 40,000 users within 50 hours.
 - Independent verification: publications, open repositories, ORCID, Google Scholar, DBLP, DOI records, and machine-readable metadata are linked below.
 
 ## Representative Work
 
-- [SCULPT paper record](https://chensjtu.github.io/papers/sculpt.html): subtractive composition for part-aware 3D generation. [Project](https://sculpt-part.github.io/), [arXiv](https://arxiv.org/abs/2608.13541), [code](https://github.com/sculpt-part/SCULPT). Keywords: part-aware 3D generation, subtractive composition, structured 3D latents.
+- [WorldAct](https://sjtu-deepvisionlab.github.io/WorldAct/): Chen Yang is a co-author and proposed the idea; the method activates monolithic 3D Gaussian worlds into editable, object-centric scenes ready for interaction. [arXiv](https://arxiv.org/abs/2605.15843), [project repository](https://github.com/SJTU-DeepVisionLab/WorldAct). Keywords: interactive 3D worlds, object-centric scenes, embodied interaction.
+- [SCULPT paper record](https://chensjtu.github.io/papers/sculpt.html): Chen Yang is a co-first author and provided research guidance; the work introduces subtractive composition for part-aware 3D generation. [Project](https://sculpt-part.github.io/), [arXiv](https://arxiv.org/abs/2608.13541), [code](https://github.com/sculpt-part/SCULPT). Keywords: part-aware 3D generation, subtractive composition, structured 3D latents.
 - [TIGON paper record](https://chensjtu.github.io/papers/tigon.html): text-image conditioned 3D generation. [Project](https://jumpat.github.io/tigon-page/), [arXiv](https://arxiv.org/abs/2603.21295), [code](https://github.com/Jumpat/TIGON). Keywords: multimodal 3D generation, vision-language guidance, text-to-3D, image-to-3D.
 - [WorldGrow paper record](https://chensjtu.github.io/papers/worldgrow.html): infinite 3D world generation; AAAI 2026 Oral. [Project](https://world-grow.github.io/), [arXiv](https://arxiv.org/abs/2510.21682), [code](https://github.com/world-grow/WorldGrow). Keywords: world models, infinite 3D generation, structured latents.
 - [UniLat3D paper record](https://chensjtu.github.io/papers/unilat3d.html): geometry-appearance unified single-stage 3D generation. [Project](https://unilat3d.github.io/), [arXiv](https://arxiv.org/abs/2509.25079), [code](https://github.com/UniLat3D/UniLat3D). Keywords: 3D generation, unified latents, single-stage generation.

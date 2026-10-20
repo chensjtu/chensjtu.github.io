@@ -225,9 +225,9 @@ img {
 
 .pill-container {
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
     margin: 0 auto 20px;
     max-width: 800px;
     padding: 0 20px;
@@ -238,11 +238,13 @@ img {
     border: 1px solid #dddddd;
     box-sizing: border-box;
     cursor: pointer;
-    margin: 8px;
+    margin: 0;
     padding: 10px;
+    min-width: 0;
+    border-radius: 8px;
     text-align: center;
     transition: background-color 0.3s;
-    width: 170px;
+    width: 100%;
 }
 
 .pill:hover {
@@ -251,10 +253,15 @@ img {
 
 .thumbnail {
     display: block;
-    height: 150px;
-    margin-bottom: 8px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 12px;
     object-fit: cover;
-    width: 150px;
+    width: 100%;
+}
+
+.thumbnail[poster="images/highlight-supratex.jpg"] {
+    object-fit: contain;
 }
 
 .hover-video {
@@ -262,7 +269,9 @@ img {
 }
 
 .pill p {
-    margin: 0;
+    margin: 4px 0 0;
+    line-height: 1.35;
+    text-wrap: balance;
 }
 
 .news-date {
@@ -734,21 +743,13 @@ span.highlight {
 
     .pill-container {
         box-sizing: border-box;
-        justify-content: flex-start;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
         margin: 0 auto 16px;
         max-width: 100vw;
         padding: 0 2.5%;
     }
 
-    .pill {
-        margin: 6px;
-        width: 156px;
-    }
-
-    .thumbnail {
-        height: 134px;
-        width: 134px;
-    }
 
     .news-date {
         text-align: left;

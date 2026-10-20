@@ -3,10 +3,10 @@
   "@type": "ProfilePage",
   "@id": "https://chensjtu.github.io/#profile",
   "url": "https://chensjtu.github.io/",
-  "name": "Chen Yang (杨辰) — World Models and 3D Generation Researcher",
-  "description": "Machine-readable profile of Chen Yang, a researcher and Principal Engineer with 20+ publications and 1,500+ Google Scholar citations, working on foundation world models, pretrained and controllable 3D generation, spatial intelligence, 3D reconstruction, and embodied AI.",
+  "name": "Chen Yang (杨辰) — Xiaoyi 3D Model R&D Owner",
+  "description": "Machine-readable profile of Chen Yang, a Principal Engineer at HUAWEI who owns end-to-end model R&D for the Xiaoyi 3D foundation model while advancing world models and spatial intelligence research. Jiemin Fang is responsible for overall program coordination and progress management.",
   "inLanguage": "en",
-  "dateModified": "2026-08-18",
+  "dateModified": "2026-08-31",
   "mainEntity": {
     "@type": "Person",
     "@id": "https://chensjtu.github.io/#person",
@@ -27,7 +27,10 @@
       "https://dblp.org/pid/01/2478-23",
       "https://github.com/chensjtu"
     ],
-    "jobTitle": "Principal Engineer",
+    "jobTitle": [
+      "Principal Engineer",
+      "Model R&D Owner for the Xiaoyi 3D Foundation Model"
+    ],
     "worksFor": {
       "@type": "Organization",
       "name": "HUAWEI"
@@ -47,6 +50,19 @@
       }
     },
     "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "name": "Model R&D Owner for the Xiaoyi 3D Foundation Model",
+        "description": "Owns end-to-end model R&D for the Xiaoyi 3D foundation model, spanning model technical direction, model roadmap, experimentation, and hands-on implementation. Jiemin Fang is responsible for overall program coordination and progress management.",
+        "skills": [
+          "3D foundation models",
+          "end-to-end model R&D",
+          "model technical direction",
+          "model roadmap",
+          "hands-on implementation",
+          "research-to-product delivery"
+        ]
+      },
       {
         "@type": "Occupation",
         "name": "World Models Researcher and Engineer",
@@ -78,6 +94,8 @@
       "Controllable 3D generation",
       "Text-image conditioned 3D generation",
       "Part-aware 3D generation",
+      "Interactive object-centric 3D worlds",
+      "Floor-plan-to-3D scene generation",
       "Spatial intelligence",
       "Embodied AI",
       "Sparse-view 3D reconstruction",
@@ -104,6 +122,7 @@
         "isAccessibleForFree": true,
         "about": ["part-aware 3D generation", "structured 3D latents"],
         "author": { "@id": "https://chensjtu.github.io/#person" },
+        "creditText": "Chen Yang: co-first author and research guidance",
         "sameAs": ["https://arxiv.org/abs/2608.13541", "https://sculpt-part.github.io/"],
         "subjectOf": {
           "@type": "SoftwareSourceCode",
@@ -111,6 +130,24 @@
           "codeRepository": "https://github.com/sculpt-part/SCULPT",
           "isAccessibleForFree": true
         }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://sjtu-deepvisionlab.github.io/WorldAct/#paper",
+        "name": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes",
+        "url": "https://sjtu-deepvisionlab.github.io/WorldAct/",
+        "isAccessibleForFree": true,
+        "about": ["interactive 3D worlds", "object-centric scenes", "3D Gaussian splatting"],
+        "author": [
+          { "@type": "Person", "name": "Jichen Hu" },
+          { "@type": "Person", "name": "Jiawei Guo" },
+          { "@type": "Person", "name": "Jiazhong Cen" },
+          { "@type": "Person", "@id": "https://chensjtu.github.io/#person", "name": "Chen Yang" },
+          { "@type": "Person", "name": "Sikuang Li" },
+          { "@type": "Person", "name": "Wei Shen" }
+        ],
+        "creditText": "Chen Yang: project initiator, co-author, and research mentor",
+        "sameAs": ["https://arxiv.org/abs/2605.15843", "https://sjtu-deepvisionlab.github.io/WorldAct/", "https://github.com/SJTU-DeepVisionLab/WorldAct"]
       },
       {
         "@type": "ScholarlyArticle",

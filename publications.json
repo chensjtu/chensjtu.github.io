@@ -1,21 +1,22 @@
 {
   "schema": "academic-publications",
   "version": "1.0",
-  "last_updated": "2026-08-18",
+  "last_updated": "2026-10-20",
   "author": {
     "name": "Chen Yang",
     "name_zh": "杨辰",
     "url": "https://chensjtu.github.io/",
     "profile": "https://chensjtu.github.io/profile.json",
     "orcid": "0000-0003-4496-7849",
-    "publication_count": 24,
-    "publication_count_display": "20+",
-    "google_scholar_citations_minimum": 1500,
-    "metrics_as_of": "2026-08-18",
+    "publication_count": 25,
+    "publication_count_display": "25",
+    "google_scholar_citations_minimum": 1950,
+    "metrics_as_of": "2026-08-31",
     "roles": [
       "World Models Researcher and Engineer",
       "3D Generation Researcher and Engineer",
-      "Principal Engineer"
+      "Principal Engineer",
+      "Model R&D Owner for the Xiaoyi 3D Foundation Model"
     ],
     "expertise": [
       "foundation world models",
@@ -41,6 +42,36 @@
   },
   "publications": [
     {
+      "id": "supratex",
+      "title": "SUPRA-Tex: 3D Generation with Super-Aligned Texture",
+      "authors": [
+        "Chen Yang",
+        "Jiemin Fang",
+        "Fanpeng Meng",
+        "Zihao Huang",
+        "Jichen Pang",
+        "Guanjun Wu",
+        "Zhikuan Bao",
+        "Qi Tian"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "type": "preprint",
+      "urls": {
+        "project": "https://supra-3d.github.io/supratex/",
+        "arxiv": "https://arxiv.org/abs/2610.22352",
+        "code": "https://github.com/Supra-3D/supra-tex",
+        "weights": "https://huggingface.co/supra3d/supra-tex",
+        "demo": "https://huggingface.co/spaces/UniLat3D/Supra-Tex"
+      },
+      "keywords": [
+        "3D generation",
+        "texture alignment",
+        "open-source"
+      ],
+      "contribution_note": "Chen Yang, Jiemin Fang, and Fanpeng Meng contributed equally."
+    },
+    {
       "id": "sculpt",
       "title": "SCULPT: Subtractive Composition for 3D Part Generation",
       "authors": ["Sikuang Li", "Chen Yang", "Jiemin Fang", "Jiazhong Cen", "Yuhe Wei", "Jichen Pang", "Wei Shen", "Qi Tian"],
@@ -56,7 +87,25 @@
         "code": "https://github.com/sculpt-part/SCULPT",
         "openalex": "https://openalex.org/W7203455405"
       },
-      "keywords": ["part-aware 3D generation", "subtractive composition", "structured 3D latents"]
+      "keywords": ["part-aware 3D generation", "subtractive composition", "structured 3D latents"],
+      "contribution_note": "Chen Yang is a co-first author and provided research guidance."
+    },
+    {
+      "id": "worldact",
+      "title": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes",
+      "authors": ["Jichen Hu", "Jiawei Guo", "Jiazhong Cen", "Chen Yang", "Sikuang Li", "Wei Shen"],
+      "year": 2026,
+      "venue": "NeurIPS",
+      "type": "conference",
+      "doi": "10.48550/arXiv.2605.15843",
+      "urls": {
+        "project": "https://sjtu-deepvisionlab.github.io/WorldAct/",
+        "arxiv": "https://arxiv.org/abs/2605.15843",
+        "pdf": "https://arxiv.org/pdf/2605.15843",
+        "repository": "https://github.com/SJTU-DeepVisionLab/WorldAct"
+      },
+      "keywords": ["interactive 3D worlds", "object-centric scenes", "3D Gaussian splatting"],
+      "contribution_note": "Chen Yang is a co-author and proposed the idea."
     },
     {
       "id": "tigon",
@@ -277,12 +326,12 @@
     },
     {
       "id": "lerplane",
-      "title": "Neural Lerplane Representations for Fast 4D Reconstruction of Deformable Tissues",
+      "title": "Neural LerPlane Representations for Fast 4D Reconstruction of Deformable Tissues",
       "authors": ["Chen Yang", "Kailing Wang", "Yuehao Wang", "Xiaokang Yang", "Wei Shen"],
       "year": 2023,
       "venue": "MICCAI",
       "type": "conference-paper",
-      "honors": ["Oral", "Young Scientist Award"],
+      "honors": ["Best Student Paper", "Young Scientist Award"],
       "urls": {
         "venue": "https://link.springer.com/chapter/10.1007/978-3-031-43996-4_5",
         "code": "https://github.com/Loping151/ForPlane"
